@@ -61,3 +61,37 @@
   url("fonts/nanum_myeongjo/NanumMyeongjo-ExtraBold.woff") format('woff'),
   url("fonts/nanum_myeongjo/NanumMyeongjo-ExtraBold.otf") format('truetype'),
 }
+
+/* nanu square */
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 300;
+  src: url("fonts/nanum_square/NanumSquareL.eot");
+  src: url("fonts/nanum_square/NanumSquareL.eot?#iefix") format('embedded-opentype'),
+       url("fonts/nanum_square/NanumSquareL.woff") format('woff'),
+       url("fonts/nanum_square/NanumSquareL.ttf") format('truetype');
+ }
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 400;
+  src: url("fonts/nanum_square/NanumSquareR.eot");
+  src: url("fonts/nanum_square/NanumSquareR.eot?#iefix") format('embedded-opentype'),
+       url("fonts/nanum_square/NanumSquareR.woff") format('woff'),
+       url("fonts/nanum_square/NanumSquareR.ttf") format('truetype');
+ }
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 700;
+  src: url("fonts/nanum_square/NanumSquareB.eot");
+  src: url("fonts/nanum_square/NanumSquareB.eot?#iefix") format('embedded-opentype'),
+       url("fonts/nanum_square/NanumSquareB.woff") format('woff'),
+       url("fonts/nanum_square/NanumSquareB.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 800;
+  src: url("fonts/nanum_square/NanumSquareEB.eot");
+  src: url("fonts/nanum_square/NanumSquareEB.eot?#iefix") format('embedded-opentype'),
+       url("fonts/nanum_square/NanumSquareEB.woff") format('woff'),
+       url("fonts/nanum_square/NanumSquareEB.ttf") format('truetype');
+}
