@@ -10,6 +10,10 @@ const globalStyles = createGlobalStyle`
     *{
         box-sizing:border-box;
     }
+    body{
+        font-family: 'Noto Sans CJK KR', 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
 `;
 
 export default globalStyles;

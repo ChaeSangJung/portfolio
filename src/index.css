@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Noto Sans */
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url("fonts/noto/NotoSansKR-Light.woff2") format('woff2'),
+  url("fonts/noto/NotoSansKR-Light.woff") format('woff'),
+  url("fonts/noto/NotoSansKR-Light.otf") format('truetype')
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/noto/NotoSansKR-Regular.woff2") format('woff2'),
+  url("fonts/noto/NotoSansKR-Regular.woff") format('woff'),
+  url("fonts/noto/NotoSansKR-Regular.otf") format('truetype')
+}
+
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/noto/NotoSansKR-Medium.woff2") format('woff2'),
+  url("fonts/noto/NotoSansKR-Medium.woff") format('woff'),
+  url("fonts/noto/NotoSansKR-Medium.otf") format('truetype')
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/noto/NotoSansKR-Bold.woff2") format('woff2'),
+  url("fonts/noto/NotoSansKR-Bold.woff") format('woff'),
+  url("fonts/noto/NotoSansKR-Bold.otf") format('truetype')
+}
+
+/* nanum myeongjo */
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/nanum_myeongjo/NanumMyeongjo-Regular.woff2") format('woff2'),
+  url("fonts/nanum_myeongjo/NanumMyeongjo-Regular.woff") format('woff'),
+  url("fonts/nanum_myeongjo/NanumMyeongjo-Regular.otf") format('truetype'),
+}
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/nanum_myeongjo/NanumMyeongjo-Bold.woff2") format('woff2'),
+  url("fonts/nanum_myeongjo/NanumMyeongjo-Bold.woff") format('woff'),
+  url("fonts/nanum_myeongjo/NanumMyeongjo-Bold.otf") format('truetype'),
+}
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/nanum_myeongjo/NanumMyeongjo-ExtraBold.woff2") format('woff2'),
+  url("fonts/nanum_myeongjo/NanumMyeongjo-ExtraBold.woff") format('woff'),
+  url("fonts/nanum_myeongjo/NanumMyeongjo-ExtraBold.otf") format('truetype'),
 }
