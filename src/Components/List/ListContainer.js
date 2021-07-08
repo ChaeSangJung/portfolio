@@ -1,72 +1,91 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
+import Thumnail from "Components/Thumnail";
+import SkillBadge from "Components/SkillBadge";
+import Commentary from "Components/Commentary";
 
-const ListContainer = ({db}) => {
+
+
+const Item = styled.li`
+    display: inline-block;
+    width: ${(props)=>(
+        props.column === 2 ? `calc(50% - 4px)` 
+        :props.column === 3 ? `calc(33% - 4px)`
+        :`100%`)
+    };
+    height: ${(props)=>(props.column > 2 && !props.fixedHeight ? `117px` : `auto`)};
+    padding: 10px 10px 10px;
+    margin: 5px 2px 5px;
+    background-color: #fff;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px dashed #ccc;
+`;
+const BoxUpper = styled.div`
+    font-size: 0;
+    text-align: left;
+`;
+const BoxText = styled.div`
+    display: inline-block;
+    width: 65%;
+    padding: 0 10px 0;
+    vertical-align: top;
+    box-sizing: border-box;
+`;
+const TextTile = styled.p`
+    font-size: 15px;
+    color: #333;
+`;
+const LinkPrj = styled.a`
+    margin-left: 5px;
+    i {
+        color: #e48d1d;
+    }
+    &:hover {
+         i {
+             color: #805e32;
+         }
+    }
+`;
+const TextEtc = styled.p`
+    margin-top: 20px;
+    font-size: 15px;
+    color: #333;
+`;
+const DivSkill = styled.div`
+    margin-top: 20px;
+`;
+
+const ListContainer = ({db, column}) => {
     
     return (
-        <li>
-            <p>{db.title ? db.title : null} {db.url ? (<a href={db.url} target="blank"><i className="fas fa-link"></i></a>) : null}</p>
-            {db.etc ? (
-                <p>{db.etc}</p>
-            ) : null}
-            
-            {db.skill.map((skill)=>(
-                <div key={skill.id}>
-                    {skill.name}
-                </div>
-            ))}
+        <Item column={column} fixedHeight={db.contents}>
+            <BoxUpper>
+                {db.thum ? (
+                    <Thumnail project={db.name} />
+                ) : null}
+                
+                <BoxText>
+                    <TextTile>
+                        {db.title ? db.title : null} {db.url ? (<LinkPrj href={db.url} target="blank"><i className="fas fa-link"></i></LinkPrj>) : null}
+                    </TextTile>
+                    {db.etc ? (
+                        <TextEtc>{db.etc}</TextEtc>
+                    ) : null}
+                    
+                    <DivSkill>
+                        {db.skill.map((skill)=>(
+                            <SkillBadge key={skill.id} skill={skill.name} />
+                        ))}
+                    </DivSkill>
+                </BoxText>
+            </BoxUpper>
             {/* 각 프로젝트 별 Componet */}
-            {db.name === "react_challenge" ? (
-                <>
-                    <div>
-                        {db.title} content
-                        {/* <img src={require(`../../images/noPosterSmall.png`).default} alt={db.name} /> */}
-                    </div>
-                    <div>
-                        이 챌린지를 수행한 많은 이들이 제일 어렵다고 한 챌린지라고 합니다.
-                        그러나 저에게는 재미가 있었습니다.
-                        state를 관리해서 필요한 부분만 다시 생성한다. 라는 개념도 신선했고
-                        Componet를 재사용한다는 것도 재미가 있었습니다.
-                        어렵고 힘은 들지만 가장 재미있게 한 챌린지입니다.
-                        지금도 react의 새로운 개념을 익히면 이곳에다가 적용을 해봅니다.
-                        class형으로 되어 있는 것을 hook으로 refactoring하기
-                        state hook, effect hook 등으로 저만의 hook을 만들어 사용해 보기
-                        챌린지기간에 강의 시간에는 useReducer를 쓸 일이 없었지만 이곳에다가 사용해 보기 등
-                        새로운 것을 익힐 때마다 적용해 보는 일종의 테스트 베드(?)같은 곳이 되었습니다.
-                        좋은 frontend 개발자는 좋은 js 개발자다 라는 생각이 든 챌린지였습니다.
-                        궁극적으로는 typescript로 refactoring하기입니다.
-                    </div>
-                </>
-            ) : db.name === "js_challenge" ? (
-                <>
-                    <div>{db.title} content</div>
-                    <div>
-                        갓 웹퍼블리셔가 돼서 jQuery만 알던 시절에
-                        Frontend라는 새로운 세상이 있다는 것을 알게 해준 챌린지였습니다.
-                        부끄러운 과거의 이야기이지만
-                        api를 쓴다는 것은 ajax를 통해 php 개발자들이 하는 걸로 알고 있었던 저에게
-                        fetch가 무었이며, rest api가 무었인지 알게 해준 챌린지였습니다.
-                        한 단계 나아갈 수 있는 계기가 되었던 챌린지였습니다.
-                    </div>
-                </>
-
-            ) : db.name === "python_challenge" ? (
-                <>
-                    <div>{db.title} content</div>
-                    <div>
-                        javascript 외에 처음 접해 본 언어입니다.
-                        python을 접하면서 data의 타입 등 javascript에도 기본이 되는 개념들을 다시 정립할 수 있었습니다.
-                        파이썬을 익힌 계기는 알고리즘 등 코딩테스트를 대비하기 위해서였습니다.
-                        알고리즘, 데이터 구조를 익히고 알게 되면서 
-                        js로 코드를 만들 때 다시 한번 생각을 하며 
-                        간결하고 누구나 보면 알 수 있는 코드를 만드는 데 공을 들이는 계기가 되었습니다.
-                        Django, Flask를 배우면서 database 살짝이지만 알 수 있었습니다.
-                        Django, Flask를 다시 접할 기회가 없어서 기억이 희미하지만
-                        다시 익히고 또 익혀서 side project를 할 때 Backend부터 Frontend까지 혼자 해보고 싶습니다.
-                    </div>
-                </>
+            {db.contents ? (
+                <Commentary type={db.name} />
             ) : null}
-        </li>
+        </Item>
     )
 }
 

@@ -1,0 +1,29 @@
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+
+const DivImg = styled.div`
+    display: inline-block;
+    width: 35%;
+    img {
+        width: 100%;
+    }
+`;
+
+const Thumnail = ({project}) => {
+    return (
+        <DivImg>
+            {project === "react_challenge" 
+                ? <img src={require(`../images/react_port.jpg`).default} alt={project} /> 
+                : project === "js_challenge" ? <img src={require(`../images/js_port.jpg`).default} alt={project} /> 
+                : <img src={require(`../images/no_img.png`).default} alt={project} />
+            }
+        </DivImg>
+    )
+}
+
+Thumnail.propTypes = {
+    project : PropTypes.string.isRequired
+}
+
+export default Thumnail;
