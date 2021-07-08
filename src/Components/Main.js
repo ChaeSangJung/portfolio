@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import ListContainer from "Components/List";
 import styled from "styled-components";
 import { latestDb, contentDb, previosDB, forwardDb } from "DB/generateDb";
+import PopWraps from "Components/PopWraps"
+import TvContent from "Components/PopContent/TvContent"
 
 const Container = styled.div`
     max-width: 1200px;
@@ -36,63 +38,89 @@ const List = styled.ul`
 `
 
 const Main = () => {
+
+    const [isPop, setIsPop] = useState({
+        "bool" : false,
+        "text" : null
+    });
+    document.addEventListener("click", (event)=>{
+        if(event.target.classList.contains("dim")){
+            setIsPop({"bool":false, "text":null})
+        }
+    });
     
     return (
-        <Container>
-            <WrapContent>
-                <ContentTitle>2020년 이후</ContentTitle>
-                <List>
-                    {latestDb.map((db)=>(
-                        <ListContainer 
-                            key={db.id}
-                            db={db}
-                            column={2}
-                        />
-                    ))}
-                </List>
-            </WrapContent>
+        <>
+            {isPop.bool && isPop.text === "tvcf" ? (
+                <PopWraps>
+                    <TvContent />
+                </PopWraps>
+                ) : isPop.bool && isPop.text === "worksheetmaker" ? (
+                    <PopWraps>
+                        <p>pop2</p>
+                    </PopWraps>
+                ) : null
+            }
+            <Container>
+                <WrapContent>
+                    <ContentTitle>2020년 이후</ContentTitle>
+                    <List>
+                        {latestDb.map((db)=>(
+                            <ListContainer 
+                                key={db.id}
+                                db={db}
+                                column={2}
+                                setIsPop={setIsPop}
+                            />
+                        ))}
+                    </List>
+                </WrapContent>
 
-            <WrapContent>
-                <ContentTitle>Nomad Coder Challenges</ContentTitle>
-                <List>
-                    {contentDb.map((db)=>(
-                        <ListContainer 
-                            key={db.id}
-                            db={db}
-                            column={2}
-                        />
-                    ))}
-                </List>
-            </WrapContent>
+                <WrapContent>
+                    <ContentTitle>Nomad Coder Challenges</ContentTitle>
+                    <List>
+                        {contentDb.map((db)=>(
+                            <ListContainer 
+                                key={db.id}
+                                db={db}
+                                column={2}
+                                setIsPop={setIsPop}
+                            />
+                        ))}
+                    </List>
+                </WrapContent>
 
-            <WrapContent>
-                <ContentTitle>앞으로의 챌린지 계획</ContentTitle>
-                <List>
-                    {forwardDb.map((db)=>(
-                        <ListContainer 
-                            key={db.id}
-                            db={db}
-                            column={2}
-                        />
-                    ))}
-                </List>
-            </WrapContent>
+                <WrapContent>
+                    <ContentTitle>앞으로의 챌린지 계획</ContentTitle>
+                    <List>
+                        {forwardDb.map((db)=>(
+                            <ListContainer 
+                                key={db.id}
+                                db={db}
+                                column={2}
+                                setIsPop={setIsPop}
+                            />
+                        ))}
+                    </List>
+                </WrapContent>
 
-            <WrapContent>
-                <ContentTitle>2020년 이전</ContentTitle>
-                <List>
-                <List>
-                    {previosDB.map((db)=>(
-                        <ListContainer 
-                            key={db.id}
-                            db={db}
-                            column={3}
-                        />
-                    ))}
-                </List>
-                </List>
-            </WrapContent>
-        </Container>
+                <WrapContent>
+                    <ContentTitle>2020년 이전</ContentTitle>
+                    <List>
+                    <List>
+                        {previosDB.map((db)=>(
+                            <ListContainer 
+                                key={db.id}
+                                db={db}
+                                column={3}
+                                setIsPop={setIsPop}
+                            />
+                        ))}
+                    </List>
+                    </List>
+                </WrapContent>
+            </Container>
+        </>
     )
 }
 

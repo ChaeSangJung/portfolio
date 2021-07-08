@@ -5,9 +5,8 @@ import Thumnail from "Components/Thumnail";
 import SkillBadge from "Components/SkillBadge";
 import Commentary from "Components/Commentary";
 
-
-
 const Item = styled.li`
+    position: relative;
     display: inline-block;
     width: ${(props)=>(
         props.column === 2 ? `calc(50% - 4px)` 
@@ -49,6 +48,7 @@ const LinkPrj = styled.a`
     }
 `;
 const TextEtc = styled.p`
+    position: relative;
     margin-top: 20px;
     font-size: 15px;
     color: #333;
@@ -56,9 +56,26 @@ const TextEtc = styled.p`
 const DivSkill = styled.div`
     margin-top: 20px;
 `;
+const MoreBtn = styled.button`
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    top: 2px;
+    i {
+        font-size: 20px;
+        color: #2472a9;
+    }
+    &:hover {
+        i {
+            color: #12517d;
+        }
+    }
+`
 
-const ListContainer = ({db, column}) => {
+const ListContainer = ({db, column, isPop, setIsPop}) => {
     
+
     return (
         <Item column={column} fixedHeight={db.contents}>
             <BoxUpper>
@@ -68,12 +85,16 @@ const ListContainer = ({db, column}) => {
                 
                 <BoxText>
                     <TextTile>
-                        {db.title ? db.title : null} {db.url ? (<LinkPrj href={db.url} target="blank"><i className="fas fa-link"></i></LinkPrj>) : null}
+                        {db.title ? db.title : null}
+                        {db.state ? (`(${db.state})`) : null} 
+                        {db.url ? (<LinkPrj href={db.url} target="blank"><i className="fas fa-link"></i></LinkPrj>) : null}
+                        {db.hasMoreBtn ? (
+                            <MoreBtn onClick={()=>{setIsPop({"bool":true, "text":db.name})}}><i className="fas fa-folder-plus"></i></MoreBtn>
+                        ) : null}
                     </TextTile>
-                    {db.etc ? (
-                        <TextEtc>{db.etc}</TextEtc>
+                    {db.todo ? (
+                        <TextEtc>{db.todo}{db.etc ? (`(${db.etc})`) : null}</TextEtc>
                     ) : null}
-                    
                     <DivSkill>
                         {db.skill.map((skill)=>(
                             <SkillBadge key={skill.id} skill={skill.name} />
@@ -85,12 +106,16 @@ const ListContainer = ({db, column}) => {
             {db.contents ? (
                 <Commentary type={db.name} />
             ) : null}
+            
+            
         </Item>
     )
 }
 
 ListContainer.propTypes = {
-    db : PropTypes.object
+    db : PropTypes.object,
+    colum: PropTypes.number,
+    setIsPop: PropTypes.func
 }
 
 export default ListContainer;

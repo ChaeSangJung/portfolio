@@ -168,9 +168,9 @@ export const forwardDb = [
 export const latestDb = [
     {
         "id" : uuidv4(),
-        "name" : "react_challenge",
+        "name" : "tvcf",
         "title" : "2020년 이후 프로젝트1",
-        "url" : "https://clever-boyd-7aff23.netlify.app",
+        "url" : "https://www.tvcf.co.kr/",
         "etc" : null,
         "thum" : true,
         "skill" : [
@@ -188,17 +188,21 @@ export const latestDb = [
             },
             {
                 "id" : uuidv4(),
-                "name" : "typescript"
+                "name" : "HTML"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "css"
             }
         ],
-        "times" : 5,
-        "contents" : true
+        "contents" : true,
+        "hasMoreBtn" : true,
     },
     {
         "id" : uuidv4(),
-        "name" : "js_challenge",
+        "name" : "worksheetmaker",
         "title" : "2020년 이후 프로젝트2",
-        "url" : "https://chaesangjung.github.io/chemomontom/",
+        "url" : "https://www.worksheetmaker.co.kr/",
         "etc" : null,
         "thum" : true,
         "skill" : [
@@ -213,22 +217,26 @@ export const latestDb = [
             {
                 "id" : uuidv4(),
                 "name" : "css"
-            }
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery"
+            },
         ],
-        "times" : 7,
-        "contents" : true
+        "contents" : true,
+        "hasMoreBtn" : true,
     },
     {
         "id" : uuidv4(),
-        "name" : "python_challenge",
+        "name" : "qoh",
         "title" : "2020년 이후 프로젝트3",
-        "url" : "https://replit.com/@ChaeSangJung/Day-Thirteen-and-Fourteen#main.py",
+        "url" : "http://qoh.co.kr/",
         "etc" : null,
         "thum" : true,
         "skill" : [
             {
                 "id" : uuidv4(),
-                "name" : "python"
+                "name" : "es6"
             },
             {
                 "id" : uuidv4(),
@@ -237,10 +245,14 @@ export const latestDb = [
             {
                 "id" : uuidv4(),
                 "name" : "css"
-            }
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery"
+            },
         ],
-        "times" : 4,
-        "contents" : true
+        "contents" : true,
+        "hasMoreBtn" : false,
     },
 ]
 // ~2020 projects
@@ -267,6 +279,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -290,6 +303,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -313,6 +327,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -336,6 +351,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -359,6 +375,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -382,6 +399,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -405,6 +423,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -428,6 +447,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -451,6 +471,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -474,6 +495,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -497,6 +519,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -520,6 +543,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -543,6 +567,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -566,6 +591,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -589,6 +615,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -612,6 +639,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -635,6 +663,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -658,6 +687,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -681,6 +711,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -704,6 +735,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -727,6 +759,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     {
         "id" : uuidv4(),
@@ -750,6 +783,7 @@ export const previosDB = [
             }
         ],
         "contents" : false,
+        "todo" : "전체 퍼블리싱"
     },
     
 ]
