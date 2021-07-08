@@ -1,7 +1,7 @@
 import React from "react";
 import ListContainer from "Components/List";
 import styled from "styled-components";
-import { contentDb, previosDB, forwardDb } from "DB/generateDb";
+import { latestDb, contentDb, previosDB, forwardDb } from "DB/generateDb";
 
 const Container = styled.div`
     max-width: 1200px;
@@ -42,7 +42,7 @@ const Main = () => {
             <WrapContent>
                 <ContentTitle>2020년 이후</ContentTitle>
                 <List>
-                    {contentDb.map((db)=>(
+                    {latestDb.map((db)=>(
                         <ListContainer 
                             key={db.id}
                             db={db}

@@ -165,7 +165,84 @@ export const forwardDb = [
 ]
 
 // 2020~ projects
-
+export const latestDb = [
+    {
+        "id" : uuidv4(),
+        "name" : "react_challenge",
+        "title" : "2020년 이후 프로젝트1",
+        "url" : "https://clever-boyd-7aff23.netlify.app",
+        "etc" : null,
+        "thum" : true,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "react"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "es6"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "styled-component"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "typescript"
+            }
+        ],
+        "times" : 5,
+        "contents" : true
+    },
+    {
+        "id" : uuidv4(),
+        "name" : "js_challenge",
+        "title" : "2020년 이후 프로젝트2",
+        "url" : "https://chaesangjung.github.io/chemomontom/",
+        "etc" : null,
+        "thum" : true,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "es6"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "css"
+            }
+        ],
+        "times" : 7,
+        "contents" : true
+    },
+    {
+        "id" : uuidv4(),
+        "name" : "python_challenge",
+        "title" : "2020년 이후 프로젝트3",
+        "url" : "https://replit.com/@ChaeSangJung/Day-Thirteen-and-Fourteen#main.py",
+        "etc" : null,
+        "thum" : true,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "python"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "css"
+            }
+        ],
+        "times" : 4,
+        "contents" : true
+    },
+]
 // ~2020 projects
 export const previosDB = [
     {
