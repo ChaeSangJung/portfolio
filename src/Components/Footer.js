@@ -13,6 +13,11 @@ const Container = styled.div`
     padding: 50px 0 50px;
     margin: 0 auto 0;
 `
+const TextReserve = styled.p`
+    margin-top: 15px;
+    font-size: 15px;
+    color: #f7f7f7;
+`;
 
 const today = new Date();
 
@@ -34,7 +39,7 @@ const Footer = () => {
                         <SkillBadge key={skill.id} skill={skill.name}/>
                     ))}
                 </div>
-                <p>© {year} Che. All rights reserved.</p>
+                <TextReserve>© {year} Che. All rights reserved.</TextReserve>
             </Container>
         </FooterWrap>
     )
