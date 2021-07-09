@@ -5,6 +5,8 @@ import styled from "styled-components";
 const SkillElm = styled.div`
     display: inline-block;
     padding: 5px 7px 5px;
+    margin-right: 9px;
+    margin-top: 5px;
     font-family: NanumSquare;
     font-weight: 800;
     font-size: 14px;
@@ -46,9 +48,6 @@ const SkillElm = styled.div`
             :"#333"
             )
     };
-    &+ div {
-        margin-left: 5px;
-    }
 `
 
 const SkillBadge = ({skill}) => {

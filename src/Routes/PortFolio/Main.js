@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import ListContainer from "Components/List";
+import List from "Components/List";
 import styled from "styled-components";
 import { latestDb, contentDb, previosDB, forwardDb } from "DB/generateDb";
 import PopWraps from "Components/PopWraps"
@@ -23,7 +23,7 @@ const ContentTitle = styled.strong`
     font-weight: 700;
     color: #2d2d21;
 `;
-const List = styled.ul`
+const ListContent = styled.ul`
     margin-top: 30px;
     font-size: 0;
     text-align: left;
@@ -64,60 +64,58 @@ const Main = () => {
             <Container>
                 <WrapContent>
                     <ContentTitle>2020년 이후</ContentTitle>
-                    <List>
+                    <ListContent>
                         {latestDb.map((db)=>(
-                            <ListContainer 
+                            <List
                                 key={db.id}
                                 db={db}
                                 column={2}
                                 setIsPop={setIsPop}
                             />
                         ))}
-                    </List>
+                    </ListContent>
                 </WrapContent>
 
                 <WrapContent>
                     <ContentTitle>Nomad Coder Challenges</ContentTitle>
-                    <List>
+                    <ListContent>
                         {contentDb.map((db)=>(
-                            <ListContainer 
+                            <List 
                                 key={db.id}
                                 db={db}
                                 column={2}
                                 setIsPop={setIsPop}
                             />
                         ))}
-                    </List>
+                    </ListContent>
                 </WrapContent>
 
                 <WrapContent>
                     <ContentTitle>앞으로의 챌린지 계획</ContentTitle>
-                    <List>
+                    <ListContent>
                         {forwardDb.map((db)=>(
-                            <ListContainer 
+                            <List
                                 key={db.id}
                                 db={db}
                                 column={2}
                                 setIsPop={setIsPop}
                             />
                         ))}
-                    </List>
+                    </ListContent>
                 </WrapContent>
 
                 <WrapContent>
                     <ContentTitle>2020년 이전</ContentTitle>
-                    <List>
-                    <List>
+                    <ListContent>
                         {previosDB.map((db)=>(
-                            <ListContainer 
+                            <List
                                 key={db.id}
                                 db={db}
                                 column={3}
                                 setIsPop={setIsPop}
                             />
                         ))}
-                    </List>
-                    </List>
+                    </ListContent>
                 </WrapContent>
             </Container>
         </>

@@ -1,9 +1,6 @@
 import React, { Component } from "react";
+import Routers from "Components/Routers";
 import GlobalStyles from "Components/GlobalStyles";
-
-import Header from "Components/Header";
-import Footer from "Components/Footer";
-import Main from "Components/Main";
 
 import "../index.css";
 
@@ -11,10 +8,8 @@ class App extends Component {
   render() {
     return (
       <>
+        <Routers />
         <GlobalStyles />
-        <Header />
-        <Main />
-        <Footer />
       </>
     );
   }

@@ -1,9 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import Thumnail from "Components/Thumnail";
 import SkillBadge from "Components/SkillBadge";
 import Commentary from "Components/Commentary";
+
+const Spin = keyframes`
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+`;
 
 const Item = styled.li`
     position: relative;
@@ -28,7 +33,7 @@ const BoxUpper = styled.div`
 const BoxText = styled.div`
     display: inline-block;
     width: 65%;
-    padding: 0 10px 0;
+    padding: 0 0 0 20px;
     vertical-align: top;
     box-sizing: border-box;
 `;
@@ -54,7 +59,7 @@ const TextEtc = styled.p`
     color: #333;
 `;
 const DivSkill = styled.div`
-    margin-top: 20px;
+    margin-top: 10px;
 `;
 const MoreBtn = styled.button`
     position: relative;
@@ -69,11 +74,18 @@ const MoreBtn = styled.button`
     &:hover {
         i {
             color: #12517d;
+            animation: ${Spin} 0.5s linear 1;
         }
     }
 `
+const TextBoxTitle = styled.span`
+    position: relative;
+    display: inline-block;
+    padding-right: 12px;
+    font-weight: 700;
+`;
 
-const ListContainer = ({db, column, isPop, setIsPop}) => {
+const ListContainer = ({db, column, setIsPop}) => {
     
 
     return (
@@ -85,15 +97,23 @@ const ListContainer = ({db, column, isPop, setIsPop}) => {
                 
                 <BoxText>
                     <TextTile>
-                        {db.title ? db.title : null}
-                        {db.state ? (`(${db.state})`) : null} 
+                        {db.title ? (
+                            <TextBoxTitle>
+                                {db.title}
+                            </TextBoxTitle>
+                        ) : null}
+                        {db.state ? (` (${db.state})`) : null} 
                         {db.url ? (<LinkPrj href={db.url} target="blank"><i className="fas fa-link"></i></LinkPrj>) : null}
                         {db.hasMoreBtn ? (
-                            <MoreBtn onClick={()=>{setIsPop({"bool":true, "text":db.name})}}><i className="fas fa-folder-plus"></i></MoreBtn>
+                            <MoreBtn onClick={()=>{setIsPop({"bool":true, "text":db.name})}}><i className="fas fa-plus-circle"></i></MoreBtn>
+                            
                         ) : null}
                     </TextTile>
                     {db.todo ? (
                         <TextEtc>{db.todo}{db.etc ? (`(${db.etc})`) : null}</TextEtc>
+                    ) : null}
+                    {db.spc ? (
+                        <TextEtc>{db.spc}</TextEtc>
                     ) : null}
                     <DivSkill>
                         {db.skill.map((skill)=>(
