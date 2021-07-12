@@ -14,6 +14,7 @@ const SkillElm = styled.div`
         (props)=>(
             props.bg === "react" ? "#222" 
             :props.bg === "es6" ? "#343433"
+            :props.bg === "js" ? "#343433"
             :props.bg === "styled-component" ? "#f9f7f7"
             :props.bg === "typescript" ? "#fff"
             :props.bg === "HTML" ? "#ebebeb"
@@ -33,6 +34,7 @@ const SkillElm = styled.div`
         (props)=>(
             props.bg === "react" ? "#61dafb" 
             :props.bg === "es6" ? "#f6df59"
+            :props.bg === "js" ? "#f6df59"
             :props.bg === "styled-component" ? "#c181c3"
             :props.bg === "typescript" ? "#007acc"
             :props.bg === "HTML" ? "#d35835"

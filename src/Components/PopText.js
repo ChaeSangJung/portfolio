@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import SkillBadge from "Components/SkillBadge";
 
 const BoxPopText = styled.div`
     display: inline-block;
     width: calc(100% - 200px);
-    padding-left: 10px;
+    padding-left: 30px;
     vertical-align: top;
     box-sizing: border-box;
 `;
@@ -13,15 +14,25 @@ const TextPop = styled.p`
     line-height: 1.6;
     color: #fff;
 `;
+const BoxSkillBox = styled.div`
+    margin-top: 20px;
+`;
 
 const PopText = ({num}) => {
     
     return (
         <BoxPopText>
             {num === "3_1" ? 
-            <TextPop>
-                한국야구위원회(KBO)는 8일 "소형준은 기자단 투표 32표 중 11표(34.4%), 팬 투표 25만8천241표 중 12만 1천857표(47.2%)를 받아 총점 40.78점으로 NC 다이노스 양의지(20.86점), 롯데 자이언츠 정훈(15.53점)을 제쳤다"고 전했다.
-            </TextPop>
+            <>
+                <TextPop>
+                    한국야구위원회(KBO)는 8일 "소형준은 기자단 투표 32표 중 11표(34.4%), 팬 투표 25만8천241표 중 12만 1천857표(47.2%)를 받아 총점 40.78점으로 NC 다이노스 양의지(20.86점), 롯데 자이언츠 정훈(15.53점)을 제쳤다"고 전했다.
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"HTML"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
             : num === "3_2" ?
             <TextPop>
                 소형준은 24이닝 동안 단 2자책점을 기록했으며, 6월 5일 롯데 자이언츠와 홈 경기에선 7이닝 동안 9개의 탈삼진을 잡으며 개인 한 경기 최다 탈삼진 타이기록을 세웠다.

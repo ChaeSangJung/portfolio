@@ -230,7 +230,7 @@ export const latestDb = [
         "id" : uuidv4(),
         "name" : "qoh",
         "title" : "2020년 이후 프로젝트3",
-        "url" : "http://qoh.co.kr/",
+        "url" : "http://qoh.co.kr",
         "etc" : null,
         "thum" : true,
         "skill" : [

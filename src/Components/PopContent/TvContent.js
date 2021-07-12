@@ -3,7 +3,7 @@ import PopText from "Components/PopText";
 import styled from "styled-components";
 
 const ItemMore = styled.li`
-    padding: 9px 5px 9px;
+    padding: 20px 0 20px;
     box-sizing: border-box;
     font-size: 0;
     border-bottom: 1px solid #151515;
@@ -12,7 +12,9 @@ const ItemMore = styled.li`
 const PopImg = styled.div`
     display: inline-block;
     width: 200px;
+    padding-left: 15px;
     vertical-align: top;
+    box-sizing: border-box;    
     img {
         width: 100%;
     }
