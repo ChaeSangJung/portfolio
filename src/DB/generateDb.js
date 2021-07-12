@@ -169,7 +169,7 @@ export const latestDb = [
     {
         "id" : uuidv4(),
         "name" : "tvcf",
-        "title" : "2020년 이후 프로젝트1",
+        "title" : "tvcf",
         "url" : "https://www.tvcf.co.kr/",
         "etc" : null,
         "thum" : true,
@@ -201,7 +201,7 @@ export const latestDb = [
     {
         "id" : uuidv4(),
         "name" : "worksheetmaker",
-        "title" : "2020년 이후 프로젝트2",
+        "title" : "워크시트메이커",
         "url" : "https://www.worksheetmaker.co.kr/",
         "etc" : null,
         "thum" : true,
@@ -229,7 +229,7 @@ export const latestDb = [
     {
         "id" : uuidv4(),
         "name" : "qoh",
-        "title" : "2020년 이후 프로젝트3",
+        "title" : "큐오홀딩스",
         "url" : "http://qoh.co.kr",
         "etc" : null,
         "thum" : true,
