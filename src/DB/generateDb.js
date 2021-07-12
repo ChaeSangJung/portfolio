@@ -259,8 +259,8 @@ export const latestDb = [
 export const previosDB = [
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "렌즈디바",
+        "url" : "http://www.lensdiva.com/main/index.php",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -279,11 +279,251 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
+        "title" : "LAB OJALA PARIS",
+        "url" : "http://www.ojalaparis.com/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼블리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "삼보인쇄사",
+        "url" : "http://sambopr.co.kr/",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "메인 페이지/헤더/상품리스트/상품 뷰페이지"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "이프린팅",
+        "url" : "http://eprinting.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "(주)굿플",
+        "url" : "http://goodpl.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "코디 바이오",
+        "url" : "http://codibio.newbiz.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "슐런 코리아",
+        "url" : "https://www.itsbkorea.com/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "케렌시아 투어",
+        "url" : "https://querenciatour.com/main/index.php",
+        "etc" : "반응형",
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "대교종합기계",
+        "url" : "http://www.dktools.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "DT AUTO TOOLS",
+        "url" : "http://shop.bizfor.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "온리몰",
+        "url" : "http://tai.bizwebs.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "모비 텔레콤(반응형)",
         "url" : null,
         "etc" : "서비스 종료",
         "thum" : false,
@@ -303,12 +543,36 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "스피드 메이트",
+        "url" : "http://speedmate.newbiz.co.kr/member/login.php",
+        "etc" : "폐쇄몰",
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "TLC 코리아",
+        "url" : "http://apex3d.co.kr/main/index.php",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -327,11 +591,155 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
+        "title" : "노량진 민물고기",
+        "url" : "http://dreamon.newbiz.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "2S Mart",
+        "url" : "http://es.newbiz.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "투어인",
+        "url" : "https://www.tourincruise.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "대한치과병원협회",
+        "url" : "http://www.kdha.net/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "제니스 정밀",
+        "url" : "http://zenith-zpi.com/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "ROC",
+        "url" : "http://roccoupler.com/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "만도리",
         "url" : null,
         "etc" : "서비스 종료",
         "thum" : false,
@@ -351,12 +759,12 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "나우리 법률사무소",
+        "url" : "http://www.naurylaw.com/main/index.php",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -375,11 +783,107 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "메인 페이지/레이아웃"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
+        "title" : "코리아인스트루먼트(주)",
+        "url" : "http://hpage.newbiz.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "화인심리상담센터",
+        "url" : "http://www.fineclinic.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "뉴브리드",
+        "url" : "http://newbreed.newbiz.co.kr/main/index.php",
+        "etc" : "반응형",
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "마인드원 심리상담 센터",
+        "url" : "http://www.mindone2.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "다모아여행",
         "url" : null,
         "etc" : "서비스 종료",
         "thum" : false,
@@ -399,12 +903,12 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "노바시스템",
+        "url" : "http://novasys.co.kr/main/index.php",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -423,36 +927,12 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : null,
-        "etc" : "서비스 종료",
-        "thum" : false,
-        "skill" : [
-            {
-                "id" : uuidv4(),
-                "name" : "jQuery",
-            },
-            {
-                "id" : uuidv4(),
-                "name" : "HTML",
-            },
-            
-            {
-                "id" : uuidv4(),
-                "name" : "css",
-            }
-        ],
-        "contents" : false,
-        "todo" : "전체 퍼블리싱"
-    },
-    {
-        "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "성누가 병원",
+        "url" : "http://slmc.co.kr/new/index.php",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -471,36 +951,12 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "75% 리뉴얼"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : null,
-        "etc" : "서비스 종료",
-        "thum" : false,
-        "skill" : [
-            {
-                "id" : uuidv4(),
-                "name" : "jQuery",
-            },
-            {
-                "id" : uuidv4(),
-                "name" : "HTML",
-            },
-            
-            {
-                "id" : uuidv4(),
-                "name" : "css",
-            }
-        ],
-        "contents" : false,
-        "todo" : "전체 퍼블리싱"
-    },
-    {
-        "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "잇코리아",
+        "url" : "http://www.eatkorea.co.kr",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -519,36 +975,12 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "메인 페이지/레이아웃"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : null,
-        "etc" : "서비스 종료",
-        "thum" : false,
-        "skill" : [
-            {
-                "id" : uuidv4(),
-                "name" : "jQuery",
-            },
-            {
-                "id" : uuidv4(),
-                "name" : "HTML",
-            },
-            
-            {
-                "id" : uuidv4(),
-                "name" : "css",
-            }
-        ],
-        "contents" : false,
-        "todo" : "전체 퍼블리싱"
-    },
-    {
-        "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "비비드 스튜디오",
+        "url" : "http://bbd.newbiz.co.kr/main/index.php",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -567,36 +999,12 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : null,
-        "etc" : "서비스 종료",
-        "thum" : false,
-        "skill" : [
-            {
-                "id" : uuidv4(),
-                "name" : "jQuery",
-            },
-            {
-                "id" : uuidv4(),
-                "name" : "HTML",
-            },
-            
-            {
-                "id" : uuidv4(),
-                "name" : "css",
-            }
-        ],
-        "contents" : false,
-        "todo" : "전체 퍼블리싱"
-    },
-    {
-        "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "휘닉스파크 렌탈샵 USNS",
+        "url" : "http://usns.newbiz.co.kr/main/index.php",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -615,36 +1023,12 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : null,
-        "etc" : "서비스 종료",
-        "thum" : false,
-        "skill" : [
-            {
-                "id" : uuidv4(),
-                "name" : "jQuery",
-            },
-            {
-                "id" : uuidv4(),
-                "name" : "HTML",
-            },
-            
-            {
-                "id" : uuidv4(),
-                "name" : "css",
-            }
-        ],
-        "contents" : false,
-        "todo" : "전체 퍼블리싱"
-    },
-    {
-        "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "춤웹진",
+        "url" : "http://dance.newbiz.co.kr/main/index.php",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -663,36 +1047,12 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : null,
-        "etc" : "서비스 종료",
-        "thum" : false,
-        "skill" : [
-            {
-                "id" : uuidv4(),
-                "name" : "jQuery",
-            },
-            {
-                "id" : uuidv4(),
-                "name" : "HTML",
-            },
-            
-            {
-                "id" : uuidv4(),
-                "name" : "css",
-            }
-        ],
-        "contents" : false,
-        "todo" : "전체 퍼블리싱"
-    },
-    {
-        "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "양아치킨",
+        "url" : "http://ya.newbiz.co.kr/main/index.php",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -711,36 +1071,12 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : null,
-        "etc" : "서비스 종료",
-        "thum" : false,
-        "skill" : [
-            {
-                "id" : uuidv4(),
-                "name" : "jQuery",
-            },
-            {
-                "id" : uuidv4(),
-                "name" : "HTML",
-            },
-            
-            {
-                "id" : uuidv4(),
-                "name" : "css",
-            }
-        ],
-        "contents" : false,
-        "todo" : "전체 퍼블리싱"
-    },
-    {
-        "id" : uuidv4(),
-        "title" : "title name",
-        "url" : "https://www.daum.net",
+        "title" : "목포간호학원",
+        "url" : "http://mokpo.newbiz.co.kr/main/index.php",
         "etc" : null,
         "thum" : false,
         "skill" : [
@@ -759,13 +1095,13 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
     {
         "id" : uuidv4(),
-        "title" : "title name",
-        "url" : null,
-        "etc" : "서비스 종료",
+        "title" : "패러는 내친구",
+        "url" : "http://paragliding.newbiz.co.kr/main/index.php",
+        "etc" : null,
         "thum" : false,
         "skill" : [
             {
@@ -783,9 +1119,368 @@ export const previosDB = [
             }
         ],
         "contents" : false,
-        "todo" : "전체 퍼블리싱"
+        "todo" : "전체 퍼플리싱 100%"
     },
-    
+    {
+        "id" : uuidv4(),
+        "title" : "한국미래융합교육협회",
+        "url" : "http://fkorea.newbiz.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%<"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "한국취약노인지원재단",
+        "url" : "http://kfssc.org/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "차주현 심리상담센터",
+        "url" : "http://www.chajoohyun.com/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "조성아 심리상담센터",
+        "url" : "http://www.mindhappy.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "금융중심지 혁신 포럼",
+        "url" : "http://finance.bizwebs.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "한국여성아동인권센터",
+        "url" : "http://woman.bizwebs.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "오토 프라이즈",
+        "url" : "http://autoprise2.bizwebs.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "구룡레저타운",
+        "url" : "http://gu.newbiz.co.kr/main/main.html",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "법무법인 일헌",
+        "url" : "http://law2.newbiz.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "VMS",
+        "url" : "http://vms.newbiz.co.kr/main/index.php",
+        "etc" : "반응형",
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "광명77플란트치과",
+        "url" : null,
+        "etc" : "사이트 이전",
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "KB바이오 인증 포털",
+        "url" : "http://ingpeople.net/works/kb_bio/filelist.html",
+        "etc" : "Intranet",
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "코리아인스트루먼트(주)",
+        "url" : "http://kic.newbiz.co.kr",
+        "etc" : "Intranet",
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "레이아웃"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "독거노인종합지원센터 - 친구만들기 사업",
+        "url" : null,
+        "etc" : "Intranet",
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "레이아웃 / PDF 레이아웃"
+    },
+    {
+        "id" : uuidv4(),
+        "title" : "불가리 퍼퓸 옴니아 팝업 스토어",
+        "url" : "http://apoidea.newbiz.co.kr/main/index.php",
+        "etc" : null,
+        "thum" : false,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "jQuery",
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML",
+            },
+            
+            {
+                "id" : uuidv4(),
+                "name" : "css",
+            }
+        ],
+        "contents" : false,
+        "todo" : "전체 퍼플리싱 100%"
+    },
 ]
 // used skill
 export const usedSkill = {

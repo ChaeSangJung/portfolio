@@ -18,7 +18,7 @@ const Item = styled.li`
         :props.column === 3 ? `calc(33% - 4px)`
         :`100%`)
     };
-    height: ${(props)=>(props.column > 2 && !props.fixedHeight ? `117px` : `auto`)};
+    height: ${(props)=>(props.column > 2 && !props.fixedHeight ? `145px` : `auto`)};
     padding: 10px 10px 10px;
     margin: 5px 2px 5px;
     background-color: #fff;
@@ -32,7 +32,7 @@ const BoxUpper = styled.div`
 `;
 const BoxText = styled.div`
     display: inline-block;
-    width: 65%;
+    width: ${(props)=>(props.column > 2 && !props.fixedHeight ? `100%` : `65%`)};;
     padding: 0 0 0 20px;
     vertical-align: top;
     box-sizing: border-box;
@@ -56,6 +56,7 @@ const TextEtc = styled.p`
     position: relative;
     margin-top: 20px;
     font-size: 15px;
+    line-height: 1.5;
     color: #333;
 `;
 const DivSkill = styled.div`
@@ -95,7 +96,7 @@ const ListContainer = ({db, column, setIsPop}) => {
                     <Thumnail project={db.name} />
                 ) : null}
                 
-                <BoxText>
+                <BoxText column={column} fixedHeight={db.contents}>
                     <TextTile>
                         {db.title ? (
                             <TextBoxTitle>
