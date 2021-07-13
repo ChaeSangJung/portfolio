@@ -53,12 +53,12 @@ const Commentary = ({type}) => {
           )
           : type === "tvcf" ? (
             <TextComment>
-              현재 진행중인 프로젝트입니다. 
+              광고 포탈 사이트로 현재 진행중인 프로젝트입니다. 
             </TextComment>
           )
           : type === "worksheetmaker" ? (
             <TextComment>
-              반응형으로 개발된 홈페이지입니다. 기획자와 디자이너가 가이드 및 디자인을 잘 해 주어서 편하게 작업한 기억이 있습니다.<br/>
+              영어 교육을 위한 사이트로 반응형으로 개발된 홈페이지입니다. 기획자와 디자이너가 가이드 및 디자인을 잘 해 주어서 편하게 작업한 기억이 있습니다.<br/>
               페이지가 다소 많지만 비슷한 같은 디자인이 많아 react의 component처럼 만들어 최초의 페이지와 패턴을 제가 만들면 디자이너가 가져다 붙이는 형태로 작업이 이루어졌습니다.<br/>
               특이한 점은 layer popup을 쓰지 않고 새창으로 팝업을 띄웠다는 것입니다.<br/>
               이 부분에서 요구사항이 있어 vanilla js로 작성된 것을 jQuery로 바꿨습니다.<br/>
@@ -69,7 +69,7 @@ const Commentary = ({type}) => {
           )
           : type === "qoh" ? (
             <TextComment>
-              fullpage jQuery를 이용하여 메인페이지를 작성을 했습니다. 
+              큐오홀딩스라는 회사의 소개를 위한 사이트입니다. fullpage jQuery를 이용하여 메인페이지를 작성을 했습니다. 
               넓이가 줄어들어 모바일 넓이에서는 fullpage jQuery가 작동을 안하게끔 구성되어 있습니다.<br/>
               최초 js로 scroll event와 mouse event로 작성을 했으나 계열사 추가 이슈와 ui 변경 이슈가 잦아서 
               제가 만든 js와 맞지 않는 부분이 있어 jQuery를 가져다 썼습니다. 추후에 js로 저만의 fullpage를 만들수 있도록 해야 겠다는 생각이 들었습니다.<br/>
