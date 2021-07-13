@@ -80,6 +80,12 @@ const TvContent = () => {
             </ItemMore>
             <ItemMore>
                 <PopImg>
+                    <img src={require(`../../images/pop/page_5.gif`).default} alt="3_14"/>
+                </PopImg>
+                <PopText num={"3_14"}/>
+            </ItemMore>
+            <ItemMore>
+                <PopImg>
                     <img src={require(`../../images/pop/page_3.gif`).default} alt="3_11"/>
                 </PopImg>
                 <PopText num={"3_11"}/>
@@ -95,12 +101,6 @@ const TvContent = () => {
                     <img src={require(`../../images/pop/page_4_1.gif`).default} alt="3_13"/>
                 </PopImg>
                 <PopText num={"3_13"}/>
-            </ItemMore>
-            <ItemMore>
-                <PopImg>
-                    <img src={require(`../../images/pop/page_5.gif`).default} alt="3_14"/>
-                </PopImg>
-                <PopText num={"3_14"}/>
             </ItemMore>
             <ItemMore>
                 <PopImg>

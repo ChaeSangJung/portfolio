@@ -112,6 +112,7 @@ const PopText = ({num}) => {
                 <TextPop>
                     hover시 나오는 나중에 보기를 누르면 YouTube의 나중에 보기 재생목록에 저장이되어 따로 모아 볼 수 있습니다.<br/>
                     미리보기를 누르면 해당영상이 팝업으로 나타납니다. videojs라는 jQuery로 video를 구현했습니다.<br/>
+                    앞으로 진행될 "YouTube 챌린지"에서 custom video player를 만드는데 잘 배워서 다른 곳에도 적용해 보아야 겠습니다.<br/>
                     웹 서버와 비동기적으로 데이터를 교환하기 위해 여기에서는 ajax를 사용했습니다.
                 </TextPop>
                 <BoxSkillBox>
@@ -149,43 +150,48 @@ const PopText = ({num}) => {
                     <SkillBadge skill={"css"} />
                 </BoxSkillBox>
             </>
-            : num === "3_11" ?
-            <>
-                <TextPop>
-                    아르헨티나 올림픽팀을 이끌고 한국과 2년 만에 대결하게 된 바티스타 감독은 "한국은 폴란드에서 열린 20세 이하(U-20) 월드컵을 포함해 많은 경기에 만났다. 상당히 강팀이고 좋은 선수가 많다. 선수들의 능력치가 향상되고 있는 팀이다. 특정 선수에 대한 언급보다 전체적으로 완성도가 높은 팀"이라고 말했다.
-                </TextPop>
-                <BoxSkillBox>
-                    <SkillBadge skill={"js"} />
-                    <SkillBadge skill={"HTML"} />
-                    <SkillBadge skill={"css"} />
-                </BoxSkillBox>
-            </>
-            : num === "3_12" ?
-            <>
-                <TextPop>
-                    한국과 평가전을 치를 아르헨티나는 도쿄올림픽 남미예선을 1위로 통과하며 명성에 걸맞는 성적을 기록했다. 지난달 덴마크와 사우디아라비아를 상대로 치른 경기에선 모두 승리를 거두며 도쿄올림픽을 앞두고 전력을 과시했다. 아르헨티나는 올림픽 본선을 앞두고 마지막으로 치르는 한국전에서 전력을 다할 것으로 점쳐진다.
-                </TextPop>
-                <BoxSkillBox>
-                    <SkillBadge skill={"js"} />
-                    <SkillBadge skill={"HTML"} />
-                    <SkillBadge skill={"css"} />
-                </BoxSkillBox>
-            </>
-            : num === "3_13" ?
-            <>
-                <TextPop>
-                    아르헨티나 올림픽팀을 이끌고 한국과 2년 만에 대결하게 된 바티스타 감독은 "한국은 폴란드에서 열린 20세 이하(U-20) 월드컵을 포함해 많은 경기에 만났다. 상당히 강팀이고 좋은 선수가 많다. 선수들의 능력치가 향상되고 있는 팀이다. 특정 선수에 대한 언급보다 전체적으로 완성도가 높은 팀"이라고 말했다.
-                </TextPop>
-                <BoxSkillBox>
-                    <SkillBadge skill={"js"} />
-                    <SkillBadge skill={"HTML"} />
-                    <SkillBadge skill={"css"} />
-                </BoxSkillBox>
-            </>
             : num === "3_14" ?
             <>
                 <TextPop>
-                    아르헨티나를 이끄는 바티스타 감독은 지난 2019년 FIFA U-20 월드컵에서 이강인과 만난 경험이 있다. 당시 조별리그 3차전에서 이강인이 선제골을 어시스트한 한국은 아르헨티나를 꺾고 16강에 진출했다.
+                    광고 시상식의 위에 있는 옵션들입니다. 현재는 임시로 jQuery를 이용하여 붙여놨습니다.<br/>
+                    react로 refactoring이 되면 api를 불러와서 axios와 js를 이용하여 함수를 만들어 작성할 예정입니다.<br/>
+                    틈 날 때마다 필요한 것들을 <a href="https://github.com/ChaeSangJung/vanilla_project/tree/master/debouncing_select_key_event_etc" target="_blank" rel="noreferrer">github</a>에 만들어 두고 있습니다.<br/>
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"HTML"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            // image
+            : num === "3_11" ?
+            <>
+                <TextPop>
+                    masonry jQuery를 사용했습니다.
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"HTML"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            // image
+            : num === "3_12" ?
+            <>
+                <TextPop>
+                    
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"HTML"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            // image
+            : num === "3_13" ?
+            <>
+                <TextPop>
+                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"js"} />
@@ -196,7 +202,7 @@ const PopText = ({num}) => {
             : num === "3_15" ?
             <>
                 <TextPop>
-                    올림픽팀의 막내 이강인은 이번 올림픽에서 활약이 기대받는 선수 중 한명이다. 지난 2019년 국제축구연맹(FIFA) 20세 이하(U-20) 월드컵에서 골든볼을 차지한 이강인은 또 한번 세계대회를 앞두고 있다.
+                    react-swipeable-views 사용
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -207,7 +213,7 @@ const PopText = ({num}) => {
             : num === "3_16" ?
             <>
                 <TextPop>
-                    한국과 평가전을 치를 아르헨티나는 도쿄올림픽 남미예선을 1위로 통과하며 명성에 걸맞는 성적을 기록했다. 지난달 덴마크와 사우디아라비아를 상대로 치른 경기에선 모두 승리를 거두며 도쿄올림픽을 앞두고 전력을 과시했다. 아르헨티나는 올림픽 본선을 앞두고 마지막으로 치르는 한국전에서 전력을 다할 것으로 점쳐진다.
+                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -218,7 +224,7 @@ const PopText = ({num}) => {
             : num === "3_17" ?
             <>
                 <TextPop>
-                    아르헨티나를 이끄는 바티스타 감독은 지난 2019년 FIFA U-20 월드컵에서 이강인과 만난 경험이 있다. 당시 조별리그 3차전에서 이강인이 선제골을 어시스트한 한국은 아르헨티나를 꺾고 16강에 진출했다.
+                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -229,7 +235,7 @@ const PopText = ({num}) => {
             : num === "3_18" ?
             <>
                 <TextPop>
-                    아르헨티나 올림픽팀을 이끌고 한국과 2년 만에 대결하게 된 바티스타 감독은 "한국은 폴란드에서 열린 20세 이하(U-20) 월드컵을 포함해 많은 경기에 만났다. 상당히 강팀이고 좋은 선수가 많다. 선수들의 능력치가 향상되고 있는 팀이다. 특정 선수에 대한 언급보다 전체적으로 완성도가 높은 팀"이라고 말했다.
+                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -240,7 +246,7 @@ const PopText = ({num}) => {
             : num === "3_19" ?
             <>
                 <TextPop>
-                    한국과 평가전을 치를 아르헨티나는 도쿄올림픽 남미예선을 1위로 통과하며 명성에 걸맞는 성적을 기록했다. 지난달 덴마크와 사우디아라비아를 상대로 치른 경기에선 모두 승리를 거두며 도쿄올림픽을 앞두고 전력을 과시했다. 아르헨티나는 올림픽 본선을 앞두고 마지막으로 치르는 한국전에서 전력을 다할 것으로 점쳐진다.
+                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -251,7 +257,7 @@ const PopText = ({num}) => {
             : num === "3_20" ?
             <>
                 <TextPop>
-                    아르헨티나를 이끄는 바티스타 감독은 지난 2019년 FIFA U-20 월드컵에서 이강인과 만난 경험이 있다. 당시 조별리그 3차전에서 이강인이 선제골을 어시스트한 한국은 아르헨티나를 꺾고 16강에 진출했다.
+                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -262,7 +268,7 @@ const PopText = ({num}) => {
             : num === "3_21" ?
             <>
                 <TextPop>
-                    올림픽팀의 막내 이강인은 이번 올림픽에서 활약이 기대받는 선수 중 한명이다. 지난 2019년 국제축구연맹(FIFA) 20세 이하(U-20) 월드컵에서 골든볼을 차지한 이강인은 또 한번 세계대회를 앞두고 있다.
+                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"js"} />
@@ -273,7 +279,7 @@ const PopText = ({num}) => {
             : num === "3_22" ?
             <>
                 <TextPop>
-                    한국과 평가전을 치를 아르헨티나는 도쿄올림픽 남미예선을 1위로 통과하며 명성에 걸맞는 성적을 기록했다. 지난달 덴마크와 사우디아라비아를 상대로 치른 경기에선 모두 승리를 거두며 도쿄올림픽을 앞두고 전력을 과시했다. 아르헨티나는 올림픽 본선을 앞두고 마지막으로 치르는 한국전에서 전력을 다할 것으로 점쳐진다.
+                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"js"} />
@@ -284,7 +290,7 @@ const PopText = ({num}) => {
             : num === "3_23" ?
             <>
                 <TextPop>
-                    올림픽팀의 막내 이강인은 이번 올림픽에서 활약이 기대받는 선수 중 한명이다. 지난 2019년 국제축구연맹(FIFA) 20세 이하(U-20) 월드컵에서 골든볼을 차지한 이강인은 또 한번 세계대회를 앞두고 있다.
+                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"js"} />
