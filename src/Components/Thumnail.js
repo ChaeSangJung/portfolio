@@ -8,6 +8,9 @@ const DivImg = styled.div`
     img {
         width: 100%;
     }
+    @media ${props => props.theme.mobile} {
+        width: 50%;
+    }
 `;
 
 const Thumnail = ({project}) => {

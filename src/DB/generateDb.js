@@ -1497,5 +1497,9 @@ export const usedSkill = {
             "id" : uuidv4(),
             "name" : "styled-component",
         },
+        {
+            "id" : uuidv4(),
+            "name" : "responsive",
+        },
     ]
 }

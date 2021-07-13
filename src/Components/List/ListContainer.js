@@ -25,6 +25,9 @@ const Item = styled.li`
     vertical-align: top;
     box-sizing: border-box;
     border: 1px dashed #ccc;
+    @media ${props => props.theme.mobile} {
+        width: 100%;
+    }
 `;
 const BoxUpper = styled.div`
     font-size: 0;
@@ -32,10 +35,13 @@ const BoxUpper = styled.div`
 `;
 const BoxText = styled.div`
     display: inline-block;
-    width: ${(props)=>(props.column > 2 && !props.fixedHeight ? `100%` : `65%`)};;
-    padding: 0 0 0 20px;
+    width: ${(props)=>(props.column > 2 && !props.fixedHeight ? `100%` : `65%`)};
+    padding: ${(props)=>(props.column > 2 && !props.fixedHeight ? `0 0 0 0` : `0 0 0 20px`)};
     vertical-align: top;
     box-sizing: border-box;
+    @media ${props => props.theme.mobile} {
+        width: ${(props)=>(props.column > 2 && !props.fixedHeight ? `100%` : `50%`)};
+    }
 `;
 const TextTile = styled.p`
     font-size: 15px;
