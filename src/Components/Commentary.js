@@ -64,7 +64,7 @@ const Commentary = ({type}) => {
               이 부분에서 요구사항이 있어 vanilla js로 작성된 것을 jQuery로 바꿨습니다.<br/>
               1. 사이트가 확장이 되면 팝업이 계속 생길 수 있다.<br/>
               2. vanilla js로 만들면 디자이너가 가져다 붙이는 과정이 힘들다.<br/>
-              이러한 요구상에 의해 jQuery로 함수를 만들어 id를 받아오면 해당 팝업이 나올 수 있도록 refactoring를 하였습니다.
+              이러한 요구에 의해 jQuery로 함수를 만들어 id를 받아오면 해당 팝업이 나올 수 있도록 refactoring를 하였습니다.
             </TextComment>
           )
           : type === "qoh" ? (
