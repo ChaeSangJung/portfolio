@@ -148,6 +148,7 @@ const PopText = ({num}) => {
                     <SkillBadge skill={"js"} />
                     <SkillBadge skill={"HTML"} />
                     <SkillBadge skill={"css"} />
+                    <SkillBadge skill={"jQuery"} />
                 </BoxSkillBox>
             </>
             : num === "3_14" ?
@@ -161,6 +162,7 @@ const PopText = ({num}) => {
                     <SkillBadge skill={"js"} />
                     <SkillBadge skill={"HTML"} />
                     <SkillBadge skill={"css"} />
+                    <SkillBadge skill={"jQuery"} />                    
                 </BoxSkillBox>
             </>
             // image
@@ -173,6 +175,7 @@ const PopText = ({num}) => {
                     <SkillBadge skill={"js"} />
                     <SkillBadge skill={"HTML"} />
                     <SkillBadge skill={"css"} />
+                    <SkillBadge skill={"jQuery"} />
                 </BoxSkillBox>
             </>
             // image
