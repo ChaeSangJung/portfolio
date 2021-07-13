@@ -19,7 +19,7 @@ const Thumnail = ({project}) => {
                 : project === "youtube" ? <img src={require(`../images/youtube.jpg`).default} alt={project} /> 
                 : project === "insta" ? <img src={require(`../images/insta.jpg`).default} alt={project} /> 
                 : project === "uber" ? <img src={require(`../images/eats.jpg`).default} alt={project} /> 
-                : project === "tvcf" ? <img src={require(`../images/js_port.jpg`).default} alt={project} /> 
+                : project === "tvcf" ? <img src={require(`../images/tv.jpg`).default} alt={project} /> 
                 : project === "worksheetmaker" ? <img src={require(`../images/worksheet.jpg`).default} alt={project} /> 
                 : project === "qoh" ? <img src={require(`../images/qos.jpg`).default} alt={project} /> 
                 : <img src={require(`../images/no_img.png`).default} alt={project} />

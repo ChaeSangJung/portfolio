@@ -36,12 +36,12 @@ const TvContent = () => {
                 </PopImg>
                 <PopText num={"3_2"}/>
             </ItemMore>
-            <ItemMore>
+            {/* <ItemMore>
                 <PopImg>
                     <img src={require(`../../images/pop/enroll_2.png`).default} alt="3_3"/>
                 </PopImg>
                 <PopText num={"3_3"}/>
-            </ItemMore>
+            </ItemMore> */}
             <ItemMore>
                 <PopImg>
                     <img src={require(`../../images/pop/enroll_3.gif`).default} alt="3_4"/>

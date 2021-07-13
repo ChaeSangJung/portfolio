@@ -9,12 +9,14 @@ import {
 import Header from "Components/Header";
 import Footer from "Components/Footer";
 import Main from "Routes/PortFolio";
+// import Navi from "Components//Navi";
 
 const Routers = () => {
     return (
         <Router>
             <>
                 <Header />
+                {/* <Navi /> */}
                 <Switch>
                     <Route path="/" exact component={Main} />
                     <Redirect from="*" to="/" />

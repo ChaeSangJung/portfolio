@@ -279,6 +279,21 @@ const PopText = ({num}) => {
                     <SkillBadge skill={"css"} />
                 </BoxSkillBox>
             </>
+            // worksheetmaker
+            : num === "2_1" ?
+            <>
+                <TextPop>
+                    YouTube 댓글 입력하는 곳과 비슷하게 글이 길어지면 textarea가 늘어나도록 해달라는 수정사항을 받았습니다.<br/>
+                    검색 과정에서 debounce와 throttle을 알게 되었습니다. 여기서는 특정 시간이 흐른 후 이벤트가 발생하는 것이 적합해 보여 debounce를 채택했습니다.<br/>
+                    보이는 textarea에 글을 입력하면 보이지 않는 textarea에도 글이 복사가 된 후 keyup 이벤트가 발생하면 보이지 않는 textarea의 scrollHeight를 구해서 보이는 textarea의 height를 설정해 주는 방식으로 구현했습니다.<br/>
+                    여기서 알게된 debouce와 throttle은 제 테스트 베드인 "리액트JS 챌린지"페이지의 검색부분에도 적용되었습니다.
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"HTML"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
             : null}
         </BoxPopText>
     )

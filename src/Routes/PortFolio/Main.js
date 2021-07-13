@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { latestDb, contentDb, previosDB, forwardDb } from "DB/generateDb";
 import PopWraps from "Components/PopWraps"
 import TvContent from "Components/PopContent/TvContent"
+import WorksheetContent from "Components/PopContent/WorksheetContent";
 
 const Container = styled.div`
     max-width: 1200px;
@@ -57,7 +58,7 @@ const Main = () => {
                 </PopWraps>
                 ) : isPop.bool && isPop.text === "worksheetmaker" ? (
                     <PopWraps>
-                        <p>pop2</p>
+                        <WorksheetContent />
                     </PopWraps>
                 ) : null
             }
