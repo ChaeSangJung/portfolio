@@ -9,6 +9,13 @@ const BoxPopText = styled.div`
     padding-right: 30px;
     vertical-align: top;
     box-sizing: border-box;
+    @media ${(props) => props.theme.mobile} {
+        display: block;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
 `;
 const TextPop = styled.p`
     font-size: 14px;
@@ -156,7 +163,7 @@ const PopText = ({num}) => {
                 <TextPop>
                     광고 시상식의 위에 있는 옵션들입니다. 현재는 임시로 jQuery를 이용하여 붙여놨습니다.<br/>
                     react로 refactoring이 되면 api를 불러와서 axios와 js를 이용하여 함수를 만들어 작성할 예정입니다.<br/>
-                    틈 날 때마다 필요한 것들을 <a href="https://github.com/ChaeSangJung/vanilla_project/tree/master/debouncing_select_key_event_etc" target="_blank" rel="noreferrer">github</a>에 만들어 두고 있습니다.<br/>
+                    틈 날 때마다 필요한 것들을 <a href="https://github.com/ChaeSangJung/vanilla_project/tree/master/debouncing_select_key_event_etc" target="_blank" rel="noreferrer">github <i className="fas fa-link"></i></a>에 만들어 두고 있습니다.<br/>
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"js"} />
@@ -205,7 +212,12 @@ const PopText = ({num}) => {
             : num === "3_15" ?
             <>
                 <TextPop>
-                    react-swipeable-views 사용
+                    My page는 react로 만들었습니다.<br/> 
+                    최초 My page의 메인 페이지만 class형으로 작성되어 있었습니다. 제가 이어 받아 hook으로 refactoring을 하였고 react-redux, axios, styled-componnet를 이용해서 만들었습니다.<br/>
+                    모두 작성후에 외부인원을 투입하여 typescript로 refactoring을 하였고 redux-saga를 적용했습니다.<br/>                    
+                    react-swipeable-views 사용하여 각 카테고리 아래의 서브 카테고리를 슬라이드로 넘겨가며 볼 수 있게 구성되었습니다.<br/>
+                    아쉬운 점이 있다면 swipe ui를 직접 작성하여 사용하지 못한 점, swipejs를 이용하여 슬라이드가 바뀔 때 axios로 호출을 했으면 낫지 않았을까 하는 점입니다.<br/>
+                    외부인원에 의해 최적화가 되었지만 refactoring된 것과 기존에 제가 작성한 것을 비교해 보며 특히 typescript 작성에 대한 공부가 많이 되었습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />

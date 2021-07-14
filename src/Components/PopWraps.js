@@ -12,6 +12,9 @@ const Dim = styled.div`
     left: 0px;
     background: rgba(0, 0, 0, 0.7);
     box-sizing: border-box;
+    @media ${props => props.theme.mobile} {
+        padding: 20px 0;
+    }
 `;
 const ListsMore = styled.ul`
     overflow-y: auto;
@@ -28,6 +31,9 @@ const ListsMore = styled.ul`
     }
     &::-webkit-scrollbar-track {
         background-color: #383837;
+    }
+    @media ${props => props.theme.mobile} {
+        width: 90%;
     }
 `;
 

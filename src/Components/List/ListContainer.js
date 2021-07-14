@@ -40,7 +40,9 @@ const BoxText = styled.div`
     vertical-align: top;
     box-sizing: border-box;
     @media ${props => props.theme.mobile} {
-        width: ${(props)=>(props.column > 2 && !props.fixedHeight ? `100%` : `50%`)};
+        width: ${(props)=>(props.column > 2 && !props.fixedHeight ? `100%` : `100%`)};
+        padding : 0;
+        margin-top: 20px;
     }
 `;
 const TextTile = styled.p`

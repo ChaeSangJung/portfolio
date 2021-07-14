@@ -46,7 +46,7 @@ const Main = () => {
     });
     document.addEventListener("click", (event)=>{
         if(event.target.classList.contains("dim")){
-            setIsPop({"bool":false, "text":null})
+            setIsPop({"bool":false, "text":null});
         }
     });
     
