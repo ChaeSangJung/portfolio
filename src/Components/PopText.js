@@ -214,7 +214,10 @@ const PopText = ({num}) => {
                 <TextPop>
                     My page는 react로 만들었습니다.<br/> 
                     최초 My page의 메인 페이지만 class형으로 작성되어 있었습니다. 제가 이어 받아 hook으로 refactoring을 하였고 react-redux, axios, styled-componnet를 이용해서 만들었습니다.<br/>
-                    모두 작성후에 외부인원을 투입하여 typescript로 refactoring을 하였고 redux-saga를 적용했습니다.<br/>                    
+                    모두 작성후에 외부인원을 투입하여 typescript로 refactoring을 하였고 redux-saga를 적용했습니다.<br/>
+                    Activity에 대한 내용입니다.<br/>
+                    썸네일을 마우스오버시 배경이 바뀌는 것은 useState, useEffect, useRef, useCallback을 사용하여 작성하였습니다. 이 기능을 구현하면서 hook의 사용법을 많이 익힐 수 있었습니다.<br/>
+                    각 컬렉션에 저장하는 건 axios(post)를 사용하여 구성하였습니다.<br/>
                     react-swipeable-views 사용하여 각 카테고리 아래의 서브 카테고리를 슬라이드로 넘겨가며 볼 수 있게 구성되었습니다.<br/>
                     아쉬운 점이 있다면 swipe ui를 직접 작성하여 사용하지 못한 점, swipejs를 이용하여 슬라이드가 바뀔 때 axios로 호출을 했으면 낫지 않았을까 하는 점입니다.<br/>
                     외부인원에 의해 최적화가 되었지만 refactoring된 것과 기존에 제가 작성한 것을 비교해 보며 특히 typescript 작성에 대한 공부가 많이 되었습니다.
@@ -228,7 +231,9 @@ const PopText = ({num}) => {
             : num === "3_16" ?
             <>
                 <TextPop>
-                    
+                    collection에 관한 내용입니다.<br/>
+                    영상페이지, 이미지페이지 등에서 저장한 내용들을 볼 수 있습니다.<br/>
+                    이 또한 react-swipeable-views 사용하였습니다.<br/>
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -239,7 +244,9 @@ const PopText = ({num}) => {
             : num === "3_17" ?
             <>
                 <TextPop>
-                    
+                    creative에 관한 내용입니다.<br/>
+                    본인이 업로드한 작품, 업로드한 작품 중에서 심사중인 작품, 본인이 스태프로 참여한 작품을 보여주는 곳입니다.<br/>
+                    마찬가지로 react-swipeable-views 사용하였습니다.<br/>                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
