@@ -146,12 +146,6 @@ const TvContent = () => {
             </ItemMore>
             <ItemMore>
                 <PopImg>
-                    <img src={require(`../../images/pop/search_2.gif`).default} alt="3_22"/>
-                </PopImg>
-                <PopText num={"3_22"}/>
-            </ItemMore>
-            <ItemMore>
-                <PopImg>
                     <img src={require(`../../images/pop/search_bar_1.gif`).default} alt="3_23"/>
                 </PopImg>
                 <PopText num={"3_23"}/>

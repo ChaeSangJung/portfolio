@@ -176,7 +176,8 @@ const PopText = ({num}) => {
             : num === "3_11" ?
             <>
                 <TextPop>
-                    masonry jQuery를 사용했습니다.
+                    이미지(프린트) 광고를 모아 놓은 곳입니다.<br/>
+                    masonry jQuery를 이용하여 구성했습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"js"} />
@@ -189,7 +190,8 @@ const PopText = ({num}) => {
             : num === "3_12" ?
             <>
                 <TextPop>
-                    
+                    이미지 광고도 영상 광고를 모아 놓은 곳과 마찬가지로 작성한 컬렉션에 저장을 할 수 있습니다.<br/>
+                    또한 생성되는 팝업에서 재생목록을 만들 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"js"} />
@@ -201,7 +203,7 @@ const PopText = ({num}) => {
             : num === "3_13" ?
             <>
                 <TextPop>
-                    
+                    영상 페이지와 같게 나중에 보기에도 추가를 할 수 있고, 미리보기도 할 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"js"} />
@@ -257,7 +259,8 @@ const PopText = ({num}) => {
             : num === "3_18" ?
             <>
                 <TextPop>
-                    
+                    my page의 메인페이지입니다.<br/>
+                    이름과 자신의 회원 class를 보여주고 각각의 sns를 설정을 해주면 자신의 sns로 링크를 할 수 있도록 해주었습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -268,7 +271,8 @@ const PopText = ({num}) => {
             : num === "3_19" ?
             <>
                 <TextPop>
-                    
+                    my page의 메인 페이지에서 자신의 활동내용을 보여주는 곳입니다.<br/>
+                    클릭을 하면 간편하게 볼 수도 있고 전체 내용을 볼 수 있게 만들었습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -279,7 +283,8 @@ const PopText = ({num}) => {
             : num === "3_20" ?
             <>
                 <TextPop>
-                    
+                    사이트내에서 쓸 수 있는 내공/외공 내역을 볼 수 있는 페이지입니다.<br/>
+                    메인페이지 왼쪽 아래쪽에 있는 내외공을 누르면 해당 페이지를 볼 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -290,29 +295,20 @@ const PopText = ({num}) => {
             : num === "3_21" ?
             <>
                 <TextPop>
-                    
+                    검색 페이지입니다.<br/>검색을 통해 받은 데이터를 화면에 보여 줄 수 있습니다.<br/>
+                    ajax를 이용을 했고 옵션을 선택하면 query를 가지고 다시 ajax를 불러 오는 형태로 만들었습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"js"} />
                     <SkillBadge skill={"HTML"} />
                     <SkillBadge skill={"css"} />
                 </BoxSkillBox>
-            </>
-            : num === "3_22" ?
-            <>
-                <TextPop>
-                    
-                </TextPop>
-                <BoxSkillBox>
-                    <SkillBadge skill={"js"} />
-                    <SkillBadge skill={"HTML"} />
-                    <SkillBadge skill={"css"} />
-                </BoxSkillBox>
-            </>
+            </>            
             : num === "3_23" ?
             <>
                 <TextPop>
-                    
+                    검색창에서 자주 찾는 keyword를 카테고리별로 분류를 했습니다.<br/>
+                    클릭을 하면 검색페이지의 해당 카테고리로 넘어가 keyword에 관련된 내용들을 보여줍니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"js"} />
