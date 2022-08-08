@@ -168,8 +168,8 @@ export const forwardDb = [
 export const latestDb = [
     {
         "id" : uuidv4(),
-        "name" : "",
-        "title" : "",
+        "name" : "webview",
+        "title" : "빗썸라이브 Webview",
         "url" : "",
         "etc" : null,
         "thum" : true,

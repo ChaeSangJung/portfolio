@@ -404,25 +404,29 @@ const PopText = ({num}) => {
             : num === "webview_7" ?
             <>
                 <TextPop>
-                    결제 내역에 처음 들어오면 최초 15개의 리스트가 생성이 되며 스크롤이 하단에 닿았을 때 추가로 15개를 더 불러 들여 옵니다.<br/>
+                    결제 내역에 처음 들어오면 최초 15개의 리스트가 생성이 됩니다.<br/>
+                    react-query 에서 useInfiniteQuery를 사용하여 스크롤이 하단에 닿을 때마다 추가로 15개를 더 불러 들여 옵니다.<br/>
                     맨 하단에는 2022년 5월 10일 이전의 주문 내역으로 넘어 갈 수 있는 버튼이 있습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
                     <SkillBadge skill={"styled-component"} />
                     <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"react-query"} />
                 </BoxSkillBox>
             </>
             : num === "webview_9" ?
             <>
                 <TextPop>
                     정책에 의해 오래된 주문 내역도 1년 보관을 해야 합니다.<br/>
-                    정책에 의한 페이지이고 상세 페이지는 없습니다.
+                    정책에 의한 페이지이고 상세 페이지는 없습니다.<br/>
+                    결제 내역과 마찬가지로 useInfiniteQuery를 사용하여 스크롤이 하단에 닿을 때마다 추가로 15개를 더 불러 들여 옵니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
                     <SkillBadge skill={"styled-component"} />
                     <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"react-query"} />
                 </BoxSkillBox>
             </>
             : num === "webview_10" ?
@@ -436,46 +440,55 @@ const PopText = ({num}) => {
                     <SkillBadge skill={"react"} />
                     <SkillBadge skill={"styled-component"} />
                     <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"react-query"} />
                 </BoxSkillBox>
             </>
             : num === "webview_11" ?
             <>
                 <TextPop>
                     취소 신청 사유 선택전입니다.<br/>
-                    
+                    사유를 선택하지 않으면 신청하기 버튼이 비활성화가 되어 신청을 할 수 없습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
                     <SkillBadge skill={"styled-component"} />
                     <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"axios"} />
                 </BoxSkillBox>
             </>
             : num === "webview_12" ?
             <>
                 <TextPop>
-                    취소 신청 사유 선택 중
+                    취소 신청 사유 선택 중입니다.<br/>
+                    사유를 선택을 하면 가려졌던 환불정보가 생성이 되며 취소 사유(판매자 책임 또는 구매자 책임)에 따라 환불금액을 계산 후 나타나집니다.<br/>
+                    axios.post()를 사용하여 취소 사유가 바뀔 때마다 state을 업데이트하여 환불금액을 보여줍니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
                     <SkillBadge skill={"styled-component"} />
                     <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"axios"} />
                 </BoxSkillBox>
             </>
             : num === "webview_13" ?
             <>
                 <TextPop>
-                    취소 신청 사유 선택 후
+                    취소 신청 사유 선택 후입니다.<br/>
+                    사유를 선택 후 취소 사유에 따른 환불금액을 계산한 다음 환불금액을 표시해 줍니다.<br/>
+                    이후 신청하기 버튼을 클릭하면 취소 신청이 완료가 됩니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
                     <SkillBadge skill={"styled-component"} />
                     <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"axios"} />
                 </BoxSkillBox>
             </>
             : num === "webview_14" ?
             <>
-                <TextPop>
-                    상품준비중 - 버튼 없음
+                <TextPop>                    
+                    상품준비중 - 버튼 없음<br/>
+                    결제 완료 다음 단계인 상품 준비중 입니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -486,7 +499,8 @@ const PopText = ({num}) => {
             : num === "webview_15" ?
             <>
                 <TextPop>
-                    배송준비중 - 버튼 없음
+                    배송준비중 - 버튼 없음<br/>
+                    상품준비중 다음 단계인 배송준비중입니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -497,7 +511,9 @@ const PopText = ({num}) => {
             : num === "webview_16" ?
             <>
                 <TextPop>
-                    배송중 - 배송조회
+                    배송중 - 배송조회<br/>
+                    배송중과 배송완료일 때에는 배송조회를 할 수 있습니다.<br/>
+                    webview이기 때문에 app에서 작동을 해야 합니다. web에서 배송조회를 할 수 있는 url값을 ios와 android로 구분하여 각 환경에 맞게 값을 전달하였습니다.<br/>                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
