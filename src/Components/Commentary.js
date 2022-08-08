@@ -53,7 +53,13 @@ const Commentary = ({type}) => {
           )
           : type === "tvcf" ? (
             <TextComment>
-              광고 포탈 사이트로 현재 진행중인 프로젝트입니다. 
+              광고 포탈 사이트입니다.<br/>
+              반응형이 아닌 페이지였지만 전반적으로 반응형으로 재구축을 했습니다.<br/>
+              회원가입 페이지에는 네이버, 페이스북, 구글로 회원가입하기 기능을 붙였습니다.<br/>
+              추가된 기능 들 중 썸네일에 mouse hover를 했을 때 마우스가 움직이는 대로 배경이 바뀌는 썸네일을 순수 javascript로 만들었습니다.<br/>
+              ajax와 javascript를 이용하여 나중에 보기, 재생목록 등에 저장 해 놓기, youtube에 있는 기능들을 구현했습니다.<br/>
+              ajax와 javascript를 이용하여 filtering이 가능한 서브페이지들도 만들었습니다.
+              위의 기능 외에 UI를 전반적으로 개편했습니다.<br/>
             </TextComment>
           )
           : type === "worksheetmaker" ? (
@@ -74,6 +80,39 @@ const Commentary = ({type}) => {
               최초 js로 scroll event와 mouse event로 작성을 했으나 계열사 추가 이슈와 ui 변경 이슈가 잦아서 
               제가 만든 js와 맞지 않는 부분이 있어 jQuery를 가져다 썼습니다. 추후에 js로 저만의 fullpage를 만들수 있도록 해야 겠다는 생각이 들었습니다.<br/>
               계열사 추가 이슈가 잦아 개발이 끝난 후에 업데이트가 쉽도록 퍼블 구성하였습니다.
+            </TextComment>
+          )
+          : type === "cms" ? (
+            <TextComment>
+              이슈: 크로스 브라우징
+            </TextComment>
+          )
+          : type === "webview" ? (
+            <TextComment>
+              flow는 크게 다음과 같이 4가지로 볼 수 있습니다.<br/>
+              1. 주문서 작성 ➡️ 결제하기 ➡️ 상세내역 보기 ➡️ 주문 내역 보기<br/>
+              2. 주문 내역 보기 ➡️ 결제 완료 : 주문 취소하기<br/>
+              3. 주문 내역 보기 ➡️ 배송 중 : 배송 조회<br/>
+              4. 주문 내역 보기 ➡️ 배송 완료 : 구매확정 하기, 교환/반품하기<br/>
+              <br/>
+              초안에서 많이 수정이 되어 오랬동안 작업을 했습니다.<br/>
+              수정을 요청하면서 기획자와 디자이너랑 많은 이야기를 나눌 수 있었습니다.<br/>
+              협의, 회의는 짧다고 좋은 것이 아니라 상대방의 입장을 고려하기가 중요하다고 많이 느꼈습니다.<br/>
+              지금도 회사의 정체성에 맞게 수정 보완 중입니다.<br/>
+            </TextComment>
+          )
+          : type === "web" ? (
+            <TextComment>
+              장바구니, 마이 페이지
+            </TextComment>
+          )
+          : type === "hompage" ? (
+            <TextComment>
+              빗썸라이브에 처음 입사를 해서 만든 작업물입니다. 회사 소개 페이지조차 없어서 급하게 만든 회사 소개 페이지입니다.<br/>
+              반응형이며 reactjs, nextjs, typescript를 이용하여 작성을 하였습니다.<br/>
+              간단한 회사 소개 페이지인데 reactjs, nextjs, typescript를 사용한 이유는 <br/>
+              1. SEO에 대응하기 위하여<br/>
+              2. 이 페이지에 커머스 기능을 하는 web project 확장을 하기 위합입니다.<br/>
             </TextComment>
           )
           : null}

@@ -28,26 +28,26 @@ const Item = styled.li`
     @media ${props => props.theme.mobile} {
         width: 100%;
     }
-`;
-const BoxUpper = styled.div`
-    font-size: 0;
-    text-align: left;
-`;
-const BoxText = styled.div`
-    display: inline-block;
-    width: ${(props)=>(props.column > 2 && !props.fixedHeight ? `100%` : `65%`)};
-    padding: ${(props)=>(props.column > 2 && !props.fixedHeight ? `0 0 0 0` : `0 0 0 20px`)};
-    vertical-align: top;
-    box-sizing: border-box;
-    @media ${props => props.theme.mobile} {
-        width: ${(props)=>(props.column > 2 && !props.fixedHeight ? `100%` : `100%`)};
-        padding : 0;
-        margin-top: 20px;
+    .boxUpper {
+        font-size: 0;
+        text-align: left;    
     }
-`;
-const TextTile = styled.p`
-    font-size: 15px;
-    color: #333;
+    .boxText {
+        display: inline-block;
+        width: ${(props)=>(props.column > 2 && !props.fixedHeight ? `100%` : `65%`)};
+        padding: ${(props)=>(props.column > 2 && !props.fixedHeight ? `0 0 0 0` : `0 0 0 20px`)};
+        vertical-align: top;
+        box-sizing: border-box;
+        @media ${props => props.theme.mobile} {
+            width: ${(props)=>(props.column > 2 && !props.fixedHeight ? `100%` : `100%`)};
+            padding : 0;
+            margin-top: 20px;
+        }
+    }
+    .textTitle {
+        font-size: 15px;
+        color: #333;
+    }
 `;
 const LinkPrj = styled.a`
     margin-left: 5px;
@@ -99,13 +99,13 @@ const ListContainer = ({db, column, setIsPop}) => {
 
     return (
         <Item column={column} fixedHeight={db.contents}>
-            <BoxUpper>
+            <div className='boxUpper' >
                 {db.thum ? (
                     <Thumnail project={db.name} />
                 ) : null}
                 
-                <BoxText column={column} fixedHeight={db.contents}>
-                    <TextTile>
+                <div className='boxText'column={column} fixedHeight={db.contents}>
+                    <p className='textTitle'>
                         {db.title ? (
                             <TextBoxTitle>
                                 {db.title}
@@ -117,7 +117,7 @@ const ListContainer = ({db, column, setIsPop}) => {
                             <MoreBtn onClick={()=>{setIsPop({"bool":true, "text":db.name})}}><i className="fas fa-plus-circle"></i></MoreBtn>
                             
                         ) : null}
-                    </TextTile>
+                    </p>
                     {db.todo ? (
                         <TextEtc>{db.todo}{db.etc ? (`(${db.etc})`) : null}</TextEtc>
                     ) : null}
@@ -129,8 +129,8 @@ const ListContainer = ({db, column, setIsPop}) => {
                             <SkillBadge key={skill.id} skill={skill.name} />
                         ))}
                     </DivSkill>
-                </BoxText>
-            </BoxUpper>
+                </div>
+            </div>
             {/* 각 프로젝트 별 Componet */}
             {db.contents ? (
                 <Commentary type={db.name} />

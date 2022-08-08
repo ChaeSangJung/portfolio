@@ -331,6 +331,246 @@ const PopText = ({num}) => {
                     <SkillBadge skill={"css"} />
                 </BoxSkillBox>
             </>
+            // webview
+            : num === "webview_1" ?
+            <>
+                <TextPop>
+                    웹뷰의 시작인 주문서 작성하기입니다.<br/>
+                    기본 배송지가 지정이 되어 있으면 기본 배송지로 최초 주문서가 작성이 되며 아무런 주소가 없을 때에는 주소 등록하기 버튼이 생성이 되어 주소록을 관리할 수 있습니다.<br/>
+                    주소록에 여러 주소가 있으면 변경 버튼을 클릭하여 선택할 수 있습니다.<br/>
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_2" ?
+            <>
+                <TextPop>
+                    기본 배송지가 지정이 되어 있으면 기본 배송지로 최초 주문서가 작성이 되며 아무런 주소가 없을 때에는 주소 등록하기 버튼이 생성이 되어 주소록을 관리할 수 있습니다.<br/>
+                    주소록에 여러 주소가 있으면 변경 버튼을 클릭하여 선택할 수 있습니다.<br/>
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_3" ?
+            <>
+                <TextPop>
+                    주문 상품을 볼 수 있습니다.
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_4" ?
+            <>
+                <TextPop>
+                    주문하기의 쿠폰 적용을 눌러 쿠폰 리스트를 불러와 주문에 적용할 수 있습니다.
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_5" ?
+            <>
+                <TextPop>
+                    결제 수단을 선택할 수 있으며 하단 기본 결제수단으로 저장을 체크하면 선택한 결제 수단을 기본 결제수단으로 지정할 수 있습니다.
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_6" ?
+            <>
+                <TextPop>
+                    결제를 하면 결제완료라는 상태와 취소할 수 있는 버튼이 생성됩니다.
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_7" ?
+            <>
+                <TextPop>
+                    결제 내역에 처음 들어오면 최초 15개의 리스트가 생성이 되며 스크롤이 하단에 닿았을 때 추가로 15개를 더 불러 들여 옵니다.<br/>
+                    맨 하단에는 2022년 5월 10일 이전의 주문 내역으로 넘어 갈 수 있는 버튼이 있습니다.
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_9" ?
+            <>
+                <TextPop>
+                    정책에 의해 오래된 주문 내역도 1년 보관을 해야 합니다.<br/>
+                    정책에 의한 페이지이고 상세 페이지는 없습니다.
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_10" ?
+            <>
+                <TextPop>
+                    주문 상세페이지입니다.<br/>
+                    문의 버튼을 누르면 해당 파트너사에 전화 연결이 됩니다.<br/>
+                    결제 완료 상태일 때에만 배송 정보를 변경할 수 있습니다.
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_11" ?
+            <>
+                <TextPop>
+                    취소 신청 사유 선택전입니다.<br/>
+                    
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_12" ?
+            <>
+                <TextPop>
+                    취소 신청 사유 선택 중
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_13" ?
+            <>
+                <TextPop>
+                    취소 신청 사유 선택 후
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_14" ?
+            <>
+                <TextPop>
+                    상품준비중 - 버튼 없음
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_15" ?
+            <>
+                <TextPop>
+                    배송준비중 - 버튼 없음
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_16" ?
+            <>
+                <TextPop>
+                    배송중 - 배송조회
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_17" ?
+            <>
+                <TextPop>
+                    배송완료 - 배송조회 구매확정 반품/교환
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_18" ?
+            <>
+                <TextPop>
+                    반품/교환 신청 반품 사유 선택 전
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_19" ?
+            <>
+                <TextPop>
+                    반품/교환 신청 반품 사유 선택 후
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_20" ?
+            <>
+                <TextPop>
+                    반품/교환 신청 교환 사유 선택 전
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_21" ?
+            <>
+                <TextPop>
+                    반품/교환 신청 교환 사유 선택 후
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            : num === "webview_22" ?
+            <>
+                <TextPop>
+                    구매확정
+                </TextPop>
+                <BoxSkillBox>
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"styled-component"} />
+                    <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
             : null}
         </BoxPopText>
     )

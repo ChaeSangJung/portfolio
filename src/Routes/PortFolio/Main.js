@@ -16,13 +16,13 @@ const WrapContent = styled.div`
     &+div {
         margin-top: 50px;
     }
-`;
-const ContentTitle = styled.strong`
-    display: block;
-    font-family: "NanumSquare";
-    font-size: 20px;
-    font-weight: 700;
-    color: #2d2d21;
+    .titleContent {
+        display: block;
+        font-family: "NanumSquare";
+        font-size: 20px;
+        font-weight: 700;
+        color: #2d2d21;
+    }
 `;
 const ListContent = styled.ul`
     margin-top: 30px;
@@ -64,7 +64,7 @@ const Main = () => {
             }
             <Container>
                 <WrapContent>
-                    <ContentTitle>2020년 이후</ContentTitle>
+                    <strong className='titleContent'>2020년 이후</strong>
                     <ListContent>
                         {latestDb.map((db)=>(
                             <List
@@ -78,7 +78,7 @@ const Main = () => {
                 </WrapContent>
 
                 <WrapContent>
-                    <ContentTitle>Nomad Coder Challenges</ContentTitle>
+                    <strong className='titleContent'>Nomad Coder Challenges</strong>
                     <ListContent>
                         {contentDb.map((db)=>(
                             <List 
@@ -92,7 +92,7 @@ const Main = () => {
                 </WrapContent>
 
                 <WrapContent>
-                    <ContentTitle>앞으로의 챌린지 계획</ContentTitle>
+                    <strong className='titleContent'>앞으로의 챌린지 계획</strong>
                     <ListContent>
                         {forwardDb.map((db)=>(
                             <List
@@ -106,7 +106,7 @@ const Main = () => {
                 </WrapContent>
 
                 <WrapContent>
-                    <ContentTitle>2020년 이전</ContentTitle>
+                    <strong className='titleContent'>2020년 이전</strong>
                     <ListContent>
                         {previosDB.map((db)=>(
                             <List

@@ -168,6 +168,38 @@ export const forwardDb = [
 export const latestDb = [
     {
         "id" : uuidv4(),
+        "name" : "",
+        "title" : "",
+        "url" : "",
+        "etc" : null,
+        "thum" : true,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "react"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "es6"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "styled-component"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "css"
+            }
+        ],
+        "contents" : true,
+        "hasMoreBtn" : true,
+    },
+    {
+        "id" : uuidv4(),
         "name" : "tvcf",
         "title" : "tvcf",
         "url" : "https://www.tvcf.co.kr/",
