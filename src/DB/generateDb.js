@@ -83,6 +83,20 @@ export const contentDb = [
 // nomad coder challenge Plans
 export const forwardDb = [
     {
+    "id" : uuidv4(),
+    "title" : "타입스크립트 챌린지",
+    "name" : "typescript",
+    "thum" : true,
+    "skill" : [
+        {
+            "id" : uuidv4(),
+            "name" : "typescript",
+        },
+    ],
+        "contents" : false,
+        "state" : '진행중'
+    },
+    {
         "id" : uuidv4(),
         "title" : "유튜브 클론 6주 완성반",
         "name" : "youtube",
@@ -106,7 +120,7 @@ export const forwardDb = [
             }
         ],
         "contents" : false,
-        "state" : "챌린지 진행중"
+        "state" : null
     },
     {
         "id" : uuidv4(),
@@ -194,6 +208,102 @@ export const latestDb = [
                 "id" : uuidv4(),
                 "name" : "css"
             }
+        ],
+        "contents" : true,
+        "hasMoreBtn" : true,
+    },
+    {
+        "id" : uuidv4(),
+        "name" : "homepage",
+        "title" : "빗썸라이브 소개 페이지",
+        "url" : "https://www.bithumblive.com",
+        "etc" : null,
+        "thum" : true,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "react"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "typescript"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "nextjs"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "es6"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "styled-component"
+            },
+        ],
+        "contents" : true,
+        "hasMoreBtn" : false,
+    },
+    {
+        "id" : uuidv4(),
+        "name" : "web-project",
+        "title" : "빗썸라이브 Web Project",
+        "url" : "https://dev-www.bithumblive.com",
+        "etc" : null,
+        "thum" : true,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "react"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "typescript"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "nextjs"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "react-query"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "recoil"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "es6"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "styled-component"
+            },
+        ],
+        "contents" : true,
+        "hasMoreBtn" : true,
+    },
+    {
+        "id" : uuidv4(),
+        "name" : "cms",
+        "title" : "빗썸라이브 CMS",
+        "url" : "https://dev2-cms.bithumblive.com/login",
+        "etc" : null,
+        "thum" : true,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "es6"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "css"
+            },
         ],
         "contents" : true,
         "hasMoreBtn" : true,

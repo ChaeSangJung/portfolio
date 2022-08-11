@@ -511,7 +511,7 @@ const PopText = ({num}) => {
             : num === "webview_16" ?
             <>
                 <TextPop>
-                    배송중 - 배송조회<br/>
+                    배송중 - 버튼 : 배송조회<br/>
                     배송중과 배송완료일 때에는 배송조회를 할 수 있습니다.<br/>
                     webview이기 때문에 app에서 작동을 해야 합니다. web에서 배송조회를 할 수 있는 url값을 ios와 android로 구분하여 각 환경에 맞게 값을 전달하였습니다.<br/>                    
                 </TextPop>
@@ -524,7 +524,7 @@ const PopText = ({num}) => {
             : num === "webview_17" ?
             <>
                 <TextPop>
-                    배송완료 - 배송조회 구매확정 반품/교환
+                    배송완료 - 버튼 : 배송조회 구매확정 반품/교환
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -535,7 +535,8 @@ const PopText = ({num}) => {
             : num === "webview_18" ?
             <>
                 <TextPop>
-                    반품/교환 신청 반품 사유 선택 전
+                    반품/교환 신청, 반품 사유 선택 전<br/>
+                    사유를 선택하면 환불 금액이 계산이 되고, 신청하기 버튼이 활성화가 됩니다.<br/>
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -546,7 +547,8 @@ const PopText = ({num}) => {
             : num === "webview_19" ?
             <>
                 <TextPop>
-                    반품/교환 신청 반품 사유 선택 후
+                    반품/교환 신청, 반품 사유 선택 후<br/>
+                    신청하기 버튼을 눌러 반품을 신청할 수 있습니다.<br/>
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -557,7 +559,8 @@ const PopText = ({num}) => {
             : num === "webview_20" ?
             <>
                 <TextPop>
-                    반품/교환 신청 교환 사유 선택 전
+                    반품/교환 신청, 교환 사유 선택 전<br/>
+                    교환도 반품과 같이 사유를 선택하면 환불 금액이 계산이 되고, 신청하기 버튼이 활성화가 됩니다.<br/>
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -568,7 +571,8 @@ const PopText = ({num}) => {
             : num === "webview_21" ?
             <>
                 <TextPop>
-                    반품/교환 신청 교환 사유 선택 후
+                    반품/교환 신청, 교환 사유 선택 후<br/>
+                    신청하기 버튼을 눌러 교환을 신청할 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -579,12 +583,305 @@ const PopText = ({num}) => {
             : num === "webview_22" ?
             <>
                 <TextPop>
-                    구매확정
+                    주문내역의 구매확정 버튼을 누르면 구매가 확정됐다는 toast메시지와 함께 구매가 확정이 됩니다.<br/>
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
                     <SkillBadge skill={"styled-component"} />
                     <SkillBadge skill={"js"} />
+                </BoxSkillBox>
+            </>
+            // cms
+            : num === "l_1_1" ?
+            <>
+                <TextPop>
+                    로그인페이지 입니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "m_1_1" ?
+            <>
+                <TextPop>
+                    메인영상관리 : App의 메인페이지 상단 배너의 영상을 관리하는 곳입니다.<br/>
+                    현재 등록되고 사용중인 영상들을 관리할 수 있습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "m_1_2" ?
+            <>
+                <TextPop>
+                    메인영상관리 - 영상업로드 : 최대 업로드 사이즈를 제한할 수 있으며(js이용), 업로드 파일도 제한할 수 있습니다.(input[type='file']의 고유 속성과 js이용)<br/>
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "m_1_3" ?
+            <>
+                <TextPop>
+                    메인영상관리 - 영상업로드 용량 초과 : 제한 설정을 해놓은 용량보다 파일의 용량이 클 경우 경고창이 나타납니다.(js이용)
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "m_1_4" ?
+            <>
+                <TextPop>
+                    메인영상관리 - url 복사 : 복사 버튼을 누르면 해당 url이 복사가 되며 좌하단에 toast메시지가 나타났다가 사라집니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "bm_1_1" ?
+            <>
+                <TextPop>
+                    방송관리 : 종료/예정/진행 중인 방송을 관리할 수 있는 페이지입니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "bm_1_2" ?
+            <>
+                <TextPop>
+                    방송관리 - 방송신규 등록 : 우상단의 방송신규버튼을 누르면 이미지와 같은 새창이 나타납니다.<br/>
+                    방송의 주제에 맞게 설정을 하면 됩니다. 제목 옆에 *표시가 있는 필수 입력 값을 설정을 안하면 우상단의 저장 버튼이 활성화가 되지 않습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "bm_1_3" ?
+            <>
+                <TextPop>
+                    방송관리 - 방송신규 등록 - 대표이미지 : 방송관리 리스트에 보여지는 이미지를 설정/변경할 수 있습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "bm_1_4" ?
+            <>
+                <TextPop>
+                    방송관리 - 방송신규 등록 - 대표이미지(이미지 선택) : jpg, jpeg, gif 등 설정한 파일 형식만 올릴 수 있으며(input[type='file']의 고유 속성인 accept 사용), window에서의 모든 파일 보기에 대응하기 위해 비설정 파일을 선택 시 경고창이 나타납니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "bm_1_5" ?
+            <>
+                <TextPop>
+                    방송관리 - 방송신규 등록 - 방송상품 등록(선택 전) : 방송상품 버튼을 클릭하면 방송에 내보낼 상품을 선택할 수 있는 팝업창이 나타납니다.<br/>
+                    해당 상품을 선택하여 저장 버튼을 클릭합니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "bm_1_6" ?
+            <>
+                <TextPop>
+                    방송관리 - 방송신규 등록 - 방송상품 등록(선택 후) : 방송상품이 등록된 모습입니다. 좌측에 20/30으로 현재 선택한 상품의 수와 등록할 수 있는 상품의 수를 나타내고 있습니다.(js이용)
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "b_1_1" ?
+            <>
+                <TextPop>
+                    방송관리 : 방송상태가 예정이나 진행인 방송을 클릭을 하면 이미지와 같은 새창이 나타납니다.<br/>
+                    채팅과 현재 송출되고 있는 방송, 프롬프터를 볼 수 있습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "b_1_2" ?
+            <>
+                <TextPop>
+                    방송관리 - 방송상태 - 채팅 클릭(복사) - 프롬프터에 붙여 넣기 : 채팅 중에 클릭을 하면 이미지와 같이 클릭을 한 채팅이 표시가 되며 프롬프터에 붙여넣기를 할 수 있습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "b_1_3" ?
+            <>
+                <TextPop>
+                    방송관리 - 방송상태 - 채팅 폰트 크기 설정 : 방송을 진행하는 호스트가 채팅을 읽기 수월하게 폰트 크기를 조절할 수 있습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "b_1_4" ?
+            <>
+                <TextPop>
+                    방송관리 - 방송상태 - 전체 채팅 엑셀파일로 저장 : 전체 채팅을 엑셀 파일로 저장할 수 있습니다.(Blob, createObjectURL 등 사용)
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "mem_1" ?
+            <>
+                <TextPop>
+                    회원관리 : 전체 회원의 목록과 정보를 알 수 있습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "mem_2" ?
+            <>
+                <TextPop>
+                    회원관리 - 회원정보 상세 : 아이디를 클릭하면 회원 상세 정보의 새창이 나타납니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "mem_3" ?
+            <>
+                <TextPop>
+                    회원관리 - 프로필이미지 등록/변경 선택 : 파일형식과 용량에 제한을 두었습니다.(input[type='file']의 고유 속성인 accept와 js사용)
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "mem_4" ?
+            <>
+                <TextPop>
+                회원관리 - 프로필이미지 등록/변경 선택 후 : 프로필이미지 등록/변경 후의 모습입니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "mem_5" ?
+            <>
+                <TextPop>
+                    회원관리 - 회원 리스트 전체 엑셀 파일 저장 : Blob, createObjectURL 등을 사용했습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "order_1" ?
+            <>
+                <TextPop>
+                    지난 주문 관리 : 2022년 5월 이전의 주문을 관리할 수 있는 페이지입니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            : num === "order_2" ?
+            <>
+                <TextPop>
+                    지난 주문 관리 - 주문 정보 상세 : 주문 번호를 클릭하면 주문 정보 상세의 새창이 나타나집니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"js"} />
+                    <SkillBadge skill={"html"} />
+                    <SkillBadge skill={"css"} />
+                </BoxSkillBox>
+            </>
+            // web_project
+            : num === "web_01" ?
+            <>
+                <TextPop>
+                    장바구니 : 상품을 골라 장바구니에 담으면 나타나는 페이지입니다.<br/>
+                    상태관리 라이브러리는 recoil을 사용하여 수량의 변경, 상품의 장바구니에서의 삭제, 상품 선택을 관리하였습니다.<br/>
+                    구매하기 버튼을 클릭하면 recoil atom에 저장되어 있는 정보를 가지고 주문하기로 넘어갑니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"typescript"} />
+                    <SkillBadge skill={"nextjs"} />
+                    <SkillBadge skill={"react-query"} />
+                    <SkillBadge skill={"recoil"} />
+                    <SkillBadge skill={"style-component"} />
+                </BoxSkillBox>
+            </>
+            : num === "web_02" ?
+            <>
+                <TextPop>
+                    마이페이지 : 닉네임과 닉네임이 없는 경우 이름이 표시가 되고 주문내역과 쿠폰으로 이동할 수 있는 링크가 있으며, 쿠폰은 현재 쿠폰의 갯수를 알 수 있습니다.<br/>
+                    배송지관리,공지사항으로 이동할 수 있는 링크와 카카오톡 문의하기로 연결되는 버튼을 가지고 있습니다.<br/>
+                    우상단의 &gt;를 누르면 내 정보를 수정할 수 있는 페이지로 링크가 됩니다.<br/>
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"typescript"} />
+                    <SkillBadge skill={"nextjs"} />
+                    <SkillBadge skill={"react-query"} />
+                    <SkillBadge skill={"style-component"} />
+                </BoxSkillBox>
+            </>
+            : num === "web_03" ?
+            <>
+                <TextPop>
+                    마이페이지 - 내 정보 수정 : 프로필 이미지를 설정/변경 할 수 있습니다.<br/>
+                    아이디와 생년월일, 성별을 제외한 값들을 수정 할 수 있습니다. 하단 회원탈퇴와 로그아웃을 클릭하면 각각 회원탈퇴 페이지로 넘어가고, 로그아웃 처리가 됩니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"typescript"} />
+                    <SkillBadge skill={"nextjs"} />
+                    <SkillBadge skill={"react-query"} />
+                    <SkillBadge skill={"style-component"} />
                 </BoxSkillBox>
             </>
             : null}

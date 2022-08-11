@@ -5,6 +5,7 @@ import { latestDb, contentDb, previosDB, forwardDb } from "DB/generateDb";
 import PopWraps from "Components/PopWraps"
 import TvContent from "Components/PopContent/TvContent"
 import WorksheetContent from "Components/PopContent/WorksheetContent";
+import WebviewContent from 'Components/PopContent/WebviewContent';
 
 const Container = styled.div`
     max-width: 1200px;
@@ -52,16 +53,32 @@ const Main = () => {
     
     return (
         <>
-            {isPop.bool && isPop.text === "tvcf" ? (
+            {(isPop.bool && isPop.text === "tvcf") && (
                 <PopWraps>
                     <TvContent />
                 </PopWraps>
-                ) : isPop.bool && isPop.text === "worksheetmaker" ? (
-                    <PopWraps>
-                        <WorksheetContent />
-                    </PopWraps>
-                ) : null
-            }
+            )}
+            {(isPop.bool && isPop.text === "worksheetmaker") && (
+                <PopWraps>
+                    <WorksheetContent />
+                </PopWraps>
+            )}
+            {(isPop.bool && isPop.text === "webview") && (
+                <PopWraps>
+                    <WebviewContent />
+                </PopWraps>
+            )}
+            {(isPop.bool && isPop.text === "web-project") && (
+                <PopWraps>
+                    빗썸라이브 Web Project
+                </PopWraps>
+            )}
+            {(isPop.bool && isPop.text === "cms") && (
+                <PopWraps>
+                    빗썸라이브 CMS
+                </PopWraps>
+            )}
+
             <Container>
                 <WrapContent>
                     <strong className='titleContent'>2020년 이후</strong>

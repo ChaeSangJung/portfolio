@@ -27,6 +27,8 @@ const SkillElm = styled.div`
             :props.bg === "nest" ? "#fff"
             :props.bg === "jest" ? "#fff"
             :props.bg === "jQuery" ? "#fff"
+            :props.bg === "react-query" ? "#efdc42"
+            :props.bg === "recoil" ? "#fff"
             : "#fff"
         )
     };
@@ -47,6 +49,8 @@ const SkillElm = styled.div`
             :props.bg === "nest" ? "#e0234e"
             :props.bg === "jest" ? "#bd5029"
             :props.bg === "jQuery" ? "#0769ad"
+            :props.bg === "react-query" ? "#fa4355"
+            :props.bg === "recoil" ? "#4776de"
             :"#333"
             )
     };
