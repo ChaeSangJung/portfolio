@@ -6,6 +6,8 @@ import PopWraps from "Components/PopWraps"
 import TvContent from "Components/PopContent/TvContent"
 import WorksheetContent from "Components/PopContent/WorksheetContent";
 import WebviewContent from 'Components/PopContent/WebviewContent';
+import WebProjectContents from 'Components/PopContent/WebProjectContents';
+import CmsContents from 'Components/PopContent/CmsContents';
 
 const Container = styled.div`
     max-width: 1200px;
@@ -70,12 +72,12 @@ const Main = () => {
             )}
             {(isPop.bool && isPop.text === "web-project") && (
                 <PopWraps>
-                    빗썸라이브 Web Project
+                    <WebProjectContents />
                 </PopWraps>
             )}
             {(isPop.bool && isPop.text === "cms") && (
                 <PopWraps>
-                    빗썸라이브 CMS
+                    <CmsContents />
                 </PopWraps>
             )}
 
