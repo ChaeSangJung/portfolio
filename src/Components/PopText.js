@@ -884,6 +884,20 @@ const PopText = ({num}) => {
                     <SkillBadge skill={"style-component"} />
                 </BoxSkillBox>
             </>
+            : num === "web_04" ?
+            <>
+              <TextPop>
+                    브랜드(웹) - 웹과 웹뷰페이지를 구분해서 만들었습니다. 모바일 기기에서 맨 위를 터치를 하면 페이지가 탑으로 스크롤이 되어야 하나 왼쪽 app 소개 페이지를 가리고(반응형) 웹뷰로 사용을 했더니 div.Container에 쌓여 있기 때문에 &lt;html&gt;을 스크롤을 하지 못하였습니다.
+                    
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"typescript"} />
+                    <SkillBadge skill={"nextjs"} />
+                    <SkillBadge skill={"react-query"} />
+                    <SkillBadge skill={"style-component"} />
+                </BoxSkillBox>
+            </>
             : null}
         </BoxPopText>
     )
