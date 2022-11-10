@@ -16,7 +16,16 @@ export const PopImg = styled.div`
     vertical-align: top;
     box-sizing: border-box;    
     img {
-        width: 100%;
+        width: 100%;        
+    }
+    div {
+      margin-top: 9px;
+    }
+    strong {
+      display: block;
+      padding-bottom: 7px;
+      font-size: 14px;
+      color: #fff;
     }
 `;
 

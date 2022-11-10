@@ -93,6 +93,20 @@ const TextBoxTitle = styled.span`
     padding-right: 12px;
     font-weight: 700;
 `;
+const DivExpose = styled.div`
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    span {        
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    div {
+        margin-top: 0;
+    }
+`;
 
 const ListContainer = ({db, column, setIsPop}) => {
     
@@ -129,6 +143,12 @@ const ListContainer = ({db, column, setIsPop}) => {
                             <SkillBadge key={skill.id} skill={skill.name} />
                         ))}
                     </DivSkill>
+                    {db.expose && (
+                        <DivExpose>
+                            <SkillBadge key={"key"} skill={db.expose} />
+                        </DivExpose>
+                    ) }
+                    
                 </div>
             </div>
             {/* 각 프로젝트 별 Componet */}

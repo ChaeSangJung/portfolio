@@ -211,6 +211,7 @@ export const latestDb = [
         ],
         "contents" : true,
         "hasMoreBtn" : true,
+        "expose" : "AWS"
     },
     {
         "id" : uuidv4(),
@@ -243,12 +244,13 @@ export const latestDb = [
         ],
         "contents" : true,
         "hasMoreBtn" : false,
+        "expose" : "AWS"
     },
     {
         "id" : uuidv4(),
         "name" : "web-project",
         "title" : "빗썸라이브 Web Project",
-        "url" : "https://dev-www.bithumblive.com",
+        "url" : "https://www.bithumblive.com",
         "etc" : null,
         "thum" : true,
         "skill" : [
@@ -283,6 +285,7 @@ export const latestDb = [
         ],
         "contents" : true,
         "hasMoreBtn" : true,
+        "expose" : "Vercel"
     },
     {
         "id" : uuidv4(),
@@ -307,6 +310,7 @@ export const latestDb = [
         ],
         "contents" : true,
         "hasMoreBtn" : true,
+        "expose" : "AWS"
     },
     {
         "id" : uuidv4(),

@@ -21,6 +21,9 @@ const TextPop = styled.p`
     font-size: 14px;
     line-height: 1.6;
     color: #fff;
+    strong {
+        font-weight: 700;
+    }
 `;
 const BoxSkillBox = styled.div`
     margin-top: 20px;
@@ -335,9 +338,11 @@ const PopText = ({num}) => {
             : num === "webview_1" ?
             <>
                 <TextPop>
-                    웹뷰의 시작인 주문서 작성하기입니다.<br/>
+                    <strong>주문서 작성하기</strong><br/><br/>
                     기본 배송지가 지정이 되어 있으면 기본 배송지가 주문서에 작성이 됩니다. 아무런 주소가 없을 때에는 주소 등록하기 버튼이 생성이 되어 주소록을 관리할 수 있습니다.<br/>
                     주소록에 여러 주소가 있으면 변경 버튼을 클릭하여 선택할 수 있습니다.<br/>
+                    <br/>
+                    결제하기 버튼을 터치를 하면 연동된 pg사의 페이지가 등장하면서 결제가 진행이 됩니다.
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -348,6 +353,7 @@ const PopText = ({num}) => {
             : num === "webview_2" ?
             <>
                 <TextPop>
+                    <strong>배송지 변경</strong><br/><br/>
                     기본 배송지로 지정이 되어 있으면 기본 배송지가 주문서에 작성이 됩니다. 주소가 없을 때에는 주소 등록하기 버튼이 생성이 되어 주소록을 관리할 수 있습니다.<br/>
                     주소록에 여러 주소가 있으면 변경 버튼을 클릭하여 선택할 수 있습니다.<br/>
                 </TextPop>
@@ -360,7 +366,7 @@ const PopText = ({num}) => {
             : num === "webview_3" ?
             <>
                 <TextPop>
-                    주문 상품을 볼 수 있습니다.
+                    <strong>주문한 상품</strong>
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -371,6 +377,7 @@ const PopText = ({num}) => {
             : num === "webview_4" ?
             <>
                 <TextPop>
+                    <strong>쿠폰 적용</strong><br/><br/>
                     주문하기의 쿠폰 적용 버튼을 눌러 쿠폰 리스트를 불러와 주문하기에 적용할 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>
@@ -382,6 +389,7 @@ const PopText = ({num}) => {
             : num === "webview_5" ?
             <>
                 <TextPop>
+                    <strong>결제 수단을 선택</strong><br/><br/>
                     결제 수단을 선택할 수 있습니다. 하단 기본 결제수단 체크박스를 선택하면 선택한 결제 수단을 기본 결제수단으로 지정할 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>
@@ -393,6 +401,7 @@ const PopText = ({num}) => {
             : num === "webview_6" ?
             <>
                 <TextPop>
+                    <strong>결제</strong><br/><br/>
                     결제를 하면 결제완료라는 상태와 취소할 수 있는 버튼이 생성됩니다.
                 </TextPop>
                 <BoxSkillBox>
@@ -404,6 +413,7 @@ const PopText = ({num}) => {
             : num === "webview_7" ?
             <>
                 <TextPop>
+                    <strong>결제 내역</strong><br/><br/>
                     결제 내역에 처음 들어오면 최초 15개의 리스트가 생성이 됩니다.<br/>
                     react-query의 useInfiniteQuery를 사용하여 스크롤이 하단에 닿을 때마다 추가로 15개를 더 불러 들여 옵니다.<br/>
                     맨 하단에는 2022년 5월 이전의 주문 내역으로 넘어 갈 수 있는 링크가 있습니다.
@@ -418,6 +428,7 @@ const PopText = ({num}) => {
             : num === "webview_9" ?
             <>
                 <TextPop>
+                    <strong>이전 주문 내역</strong><br/><br/>
                     정책에 의해 오래된 주문 내역도 1년 보관을 해야 합니다.<br/>
                     정책에 의한 페이지이고 상세 페이지는 없습니다.<br/>
                     결제 내역과 마찬가지로 useInfiniteQuery를 사용하여 스크롤이 하단에 닿을 때마다 추가로 15개를 더 불러 들여 옵니다.
@@ -432,7 +443,7 @@ const PopText = ({num}) => {
             : num === "webview_10" ?
             <>
                 <TextPop>
-                    주문 상세페이지입니다.<br/>
+                    <strong>주문 상세페이지</strong><br/><br/>                    
                     문의 버튼을 누르면 해당 파트너사에 전화 연결이 됩니다.<br/>
                     결제 완료 상태일 때에만 배송 정보를 변경할 수 있습니다.
                 </TextPop>
@@ -446,7 +457,7 @@ const PopText = ({num}) => {
             : num === "webview_11" ?
             <>
                 <TextPop>
-                    취소 신청 사유 선택전입니다.<br/>
+                    <strong>취소 신청 사유 선택 전</strong><br/><br/>                    
                     사유를 선택하지 않으면 신청하기 버튼이 비활성화가 되어 신청을 할 수 없습니다.
                 </TextPop>
                 <BoxSkillBox>
@@ -459,7 +470,7 @@ const PopText = ({num}) => {
             : num === "webview_12" ?
             <>
                 <TextPop>
-                    취소 신청 사유 선택 중입니다.<br/>
+                    <strong>취소 신청 사유 선택 중</strong><br/><br/>                    
                     사유를 선택을 하면 가려졌던 환불정보가 생성이 되며 취소 사유(판매자 책임 또는 구매자 책임)에 따라 환불금액을 계산 후 나타나집니다.<br/>
                     axios.post()를 사용하여 취소 사유가 바뀔 때마다 state을 업데이트하여 환불금액을 보여줍니다.
                 </TextPop>
@@ -473,7 +484,7 @@ const PopText = ({num}) => {
             : num === "webview_13" ?
             <>
                 <TextPop>
-                    취소 신청 사유 선택 후입니다.<br/>
+                    <strong>취소 신청 사유 선택 후</strong><br/><br/>                    
                     사유를 선택 후 취소 사유에 따른 환불금액을 계산한 다음 환불금액을 표시해 줍니다.<br/>
                     이후 신청하기 버튼을 클릭하면 취소 신청이 완료가 됩니다.
                 </TextPop>
@@ -486,8 +497,8 @@ const PopText = ({num}) => {
             </>
             : num === "webview_14" ?
             <>
-                <TextPop>                    
-                    상품준비중 - 버튼 없음<br/>
+                <TextPop>    
+                    <strong>상품준비중 - 버튼 없음</strong><br/><br/>                                    
                     결제 완료 다음 단계인 상품 준비중 입니다.
                 </TextPop>
                 <BoxSkillBox>
@@ -499,7 +510,8 @@ const PopText = ({num}) => {
             : num === "webview_15" ?
             <>
                 <TextPop>
-                    배송준비중 - 버튼 없음<br/>
+                    <strong>배송준비중 - 버튼 없음</strong><br/><br/>
+                    
                     상품준비중 다음 단계인 배송준비중입니다.
                 </TextPop>
                 <BoxSkillBox>
@@ -511,7 +523,8 @@ const PopText = ({num}) => {
             : num === "webview_16" ?
             <>
                 <TextPop>
-                    배송중 - 버튼 : 배송조회<br/>
+                    <strong>배송중 - 버튼 : 배송조회</strong><br/><br/>
+
                     배송중과 배송완료일 때에는 배송조회를 할 수 있습니다.<br/>
                     webview이기 때문에 app에서 작동을 해야 합니다. web에서 배송조회를 할 수 있는 url값을 ios와 android로 구분하여 각 환경에 맞게 값을 전달하였습니다.<br/>                    
                 </TextPop>
@@ -524,7 +537,8 @@ const PopText = ({num}) => {
             : num === "webview_17" ?
             <>
                 <TextPop>
-                    배송완료 - 버튼 : 배송조회 구매확정 반품/교환
+                    <strong>배송완료 - 버튼 : 배송조회 구매확정 반품/교환</strong>
+                    
                 </TextPop>
                 <BoxSkillBox>
                     <SkillBadge skill={"react"} />
@@ -535,7 +549,8 @@ const PopText = ({num}) => {
             : num === "webview_18" ?
             <>
                 <TextPop>
-                    반품/교환 신청, 반품 사유 선택 전<br/>
+                    <strong>반품/교환 신청, 반품 사유 선택 전</strong><br/><br/>
+                    
                     사유를 선택하면 환불 금액이 계산이 되고, 신청하기 버튼이 활성화가 됩니다.<br/>
                 </TextPop>
                 <BoxSkillBox>
@@ -547,7 +562,8 @@ const PopText = ({num}) => {
             : num === "webview_19" ?
             <>
                 <TextPop>
-                    반품/교환 신청, 반품 사유 선택 후<br/>
+                    <strong>반품/교환 신청, 반품 사유 선택 후</strong><br/><br/>
+                    
                     신청하기 버튼을 눌러 반품을 신청할 수 있습니다.<br/>
                 </TextPop>
                 <BoxSkillBox>
@@ -559,7 +575,8 @@ const PopText = ({num}) => {
             : num === "webview_20" ?
             <>
                 <TextPop>
-                    반품/교환 신청, 교환 사유 선택 전<br/>
+                    <strong>반품/교환 신청, 교환 사유 선택 전</strong><br/><br/>
+                    
                     교환도 반품과 같이 사유를 선택하면 환불 금액이 계산이 되고, 신청하기 버튼이 활성화가 됩니다.<br/>
                 </TextPop>
                 <BoxSkillBox>
@@ -571,7 +588,8 @@ const PopText = ({num}) => {
             : num === "webview_21" ?
             <>
                 <TextPop>
-                    반품/교환 신청, 교환 사유 선택 후<br/>
+                    <strong>반품/교환 신청, 교환 사유 선택 후</strong><br/><br/>
+                    
                     신청하기 버튼을 눌러 교환을 신청할 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>
@@ -583,6 +601,7 @@ const PopText = ({num}) => {
             : num === "webview_22" ?
             <>
                 <TextPop>
+                    <strong>주문내역의 구매확정</strong><br/><br/>
                     주문내역의 구매확정 버튼을 누르면 구매가 확정됐다는 toast메시지와 함께 구매가 확정이 됩니다.<br/>
                 </TextPop>
                 <BoxSkillBox>
@@ -595,7 +614,8 @@ const PopText = ({num}) => {
             : num === "l_1_1" ?
             <>
                 <TextPop>
-                    로그인페이지 입니다.
+                    <strong>로그인페이지</strong>
+                    
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -606,7 +626,8 @@ const PopText = ({num}) => {
             : num === "m_1_1" ?
             <>
                 <TextPop>
-                    메인영상관리 : App의 메인페이지 상단 배너의 영상을 관리하는 곳입니다.<br/>
+                    <strong>메인영상관리</strong><br/><br/>
+                    App의 메인페이지 상단 배너의 영상을 관리하는 곳입니다.<br/>
                     현재 등록되고 사용중인 영상들을 관리할 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>                    
@@ -618,7 +639,8 @@ const PopText = ({num}) => {
             : num === "m_1_2" ?
             <>
                 <TextPop>
-                    메인영상관리 - 영상업로드 : 최대 업로드 사이즈를 제한할 수 있으며(js이용), 업로드 파일도 제한할 수 있습니다.(input[type='file']의 고유 속성과 js이용)<br/>
+                    <strong>메인영상관리 - 영상업로드</strong><br/><br/>
+                    최대 업로드 사이즈를 제한할 수 있으며(js이용), 업로드 파일도 제한할 수 있습니다.(input[type='file']의 고유 속성과 js이용)<br/>
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -629,7 +651,8 @@ const PopText = ({num}) => {
             : num === "m_1_3" ?
             <>
                 <TextPop>
-                    메인영상관리 - 영상업로드 용량 초과 : 제한 설정을 해놓은 용량보다 파일의 용량이 클 경우 경고창이 나타납니다.(js이용)
+                    <strong>메인영상관리 - 영상업로드 용량 초과</strong><br/><br/>
+                    제한 설정을 해놓은 용량보다 파일의 용량이 클 경우 경고창이 나타납니다.(js이용)
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -640,7 +663,8 @@ const PopText = ({num}) => {
             : num === "m_1_4" ?
             <>
                 <TextPop>
-                    메인영상관리 - url 복사 : 복사 버튼을 누르면 해당 url이 복사가 되며 좌하단에 toast메시지가 나타났다가 사라집니다.
+                    <strong>메인영상관리 - url 복사</strong><br/><br/>
+                    복사 버튼을 누르면 해당 url이 복사가 되며 좌하단에 toast메시지가 나타났다가 사라집니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -651,7 +675,8 @@ const PopText = ({num}) => {
             : num === "bm_1_1" ?
             <>
                 <TextPop>
-                    방송관리 : 종료/예정/진행 중인 방송을 관리할 수 있는 페이지입니다.
+                    <strong>방송관리</strong><br/><br/>
+                    종료/예정/진행 중인 방송을 관리할 수 있는 페이지입니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -662,7 +687,8 @@ const PopText = ({num}) => {
             : num === "bm_1_2" ?
             <>
                 <TextPop>
-                    방송관리 - 방송신규 등록 : 우상단의 방송신규버튼을 누르면 이미지와 같은 새창이 나타납니다.<br/>
+                    <strong>방송관리 - 방송신규 등록</strong><br/><br/>
+                    우상단의 방송신규버튼을 누르면 이미지와 같은 새창이 나타납니다.<br/>
                     방송의 주제에 맞게 설정을 하면 됩니다. 제목 옆에 *표시가 있는 필수 입력 값을 설정을 안하면 우상단의 저장 버튼이 활성화가 되지 않습니다.
                 </TextPop>
                 <BoxSkillBox>                    
@@ -674,7 +700,8 @@ const PopText = ({num}) => {
             : num === "bm_1_3" ?
             <>
                 <TextPop>
-                    방송관리 - 방송신규 등록 - 대표이미지 : 방송관리 리스트에 보여지는 이미지를 설정/변경할 수 있습니다.
+                    <strong>방송관리 - 방송신규 등록 - 대표이미지</strong><br/><br/>
+                    방송관리 리스트에 보여지는 이미지를 설정/변경할 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -685,7 +712,8 @@ const PopText = ({num}) => {
             : num === "bm_1_4" ?
             <>
                 <TextPop>
-                    방송관리 - 방송신규 등록 - 대표이미지(이미지 선택) : jpg, jpeg, gif 등 설정한 파일 형식만 올릴 수 있으며(input[type='file']의 고유 속성인 accept 사용), window에서의 모든 파일 보기에 대응하기 위해 비설정 파일을 선택 시 경고창이 나타납니다.
+                    <strong>방송관리 - 방송신규 등록 - 대표이미지(이미지 선택)</strong><br/><br/>
+                    jpg, jpeg, gif 등 설정한 파일 형식만 올릴 수 있으며(input[type='file']의 고유 속성인 accept 사용), window에서의 모든 파일 보기에 대응하기 위해 비설정 파일을 선택 시 경고창이 나타납니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -696,7 +724,8 @@ const PopText = ({num}) => {
             : num === "bm_1_5" ?
             <>
                 <TextPop>
-                    방송관리 - 방송신규 등록 - 방송상품 등록(선택 전) : 방송상품 버튼을 클릭하면 방송에 내보낼 상품을 선택할 수 있는 팝업창이 나타납니다.<br/>
+                    <strong>방송관리 - 방송신규 등록 - 방송상품 등록(선택 전)</strong><br/><br/>
+                    방송상품 버튼을 클릭하면 방송에 내보낼 상품을 선택할 수 있는 팝업창이 나타납니다.<br/>
                     해당 상품을 선택하여 저장 버튼을 클릭합니다.
                 </TextPop>
                 <BoxSkillBox>                    
@@ -708,7 +737,8 @@ const PopText = ({num}) => {
             : num === "bm_1_6" ?
             <>
                 <TextPop>
-                    방송관리 - 방송신규 등록 - 방송상품 등록(선택 후) : 방송상품이 등록된 모습입니다. 좌측에 20/30으로 현재 선택한 상품의 수와 등록할 수 있는 상품의 수를 나타내고 있습니다.(js이용)
+                    <strong>방송관리 - 방송신규 등록 - 방송상품 등록(선택 후)</strong><br/><br/>
+                    방송상품이 등록된 모습입니다. 좌측에 20/30으로 현재 선택한 상품의 수와 등록할 수 있는 상품의 수를 나타내고 있습니다.(js이용)
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -719,7 +749,8 @@ const PopText = ({num}) => {
             : num === "b_1_1" ?
             <>
                 <TextPop>
-                    방송관리 : 방송상태가 예정이나 진행인 방송을 클릭을 하면 이미지와 같은 새창이 나타납니다.<br/>
+                    <strong>방송관리</strong><br/><br/>
+                    방송상태가 예정이나 진행인 방송을 클릭을 하면 이미지와 같은 새창이 나타납니다.<br/>
                     채팅과 현재 송출되고 있는 방송, 프롬프터를 볼 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>                    
@@ -731,7 +762,8 @@ const PopText = ({num}) => {
             : num === "b_1_2" ?
             <>
                 <TextPop>
-                    방송관리 - 방송상태 - 채팅 클릭(복사) - 프롬프터에 붙여 넣기 : 채팅 중에 클릭을 하면 이미지와 같이 클릭을 한 채팅이 표시가 되며 프롬프터에 붙여넣기를 할 수 있습니다.
+                    <strong>방송관리 - 방송상태 - 채팅 클릭(복사) - 프롬프터에 붙여 넣기</strong><br/><br/>
+                    채팅 중에 클릭을 하면 이미지와 같이 클릭을 한 채팅이 표시가 되며 프롬프터에 붙여넣기를 할 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -742,7 +774,8 @@ const PopText = ({num}) => {
             : num === "b_1_3" ?
             <>
                 <TextPop>
-                    방송관리 - 방송상태 - 채팅 폰트 크기 설정 : 방송을 진행하는 호스트가 채팅을 읽기 수월하게 폰트 크기를 조절할 수 있습니다.
+                    <strong>방송관리 - 방송상태 - 채팅 폰트 크기 설정</strong><br/><br/>
+                    방송을 진행하는 호스트가 채팅을 읽기 수월하게 폰트 크기를 조절할 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -753,7 +786,8 @@ const PopText = ({num}) => {
             : num === "b_1_4" ?
             <>
                 <TextPop>
-                    방송관리 - 방송상태 - 전체 채팅 엑셀파일로 저장 : 전체 채팅을 엑셀 파일로 저장할 수 있습니다.(Blob, createObjectURL 등 사용)
+                    <strong>방송관리 - 방송상태 - 전체 채팅 엑셀파일로 저장</strong><br/><br/>
+                    전체 채팅을 엑셀 파일로 저장할 수 있습니다.(Blob, createObjectURL 등 사용)
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -764,7 +798,8 @@ const PopText = ({num}) => {
             : num === "mem_1" ?
             <>
                 <TextPop>
-                    회원관리 : 전체 회원의 목록과 정보를 알 수 있습니다.
+                    <strong>회원관리</strong><br/><br/>
+                    전체 회원의 목록과 정보를 알 수 있습니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -775,7 +810,8 @@ const PopText = ({num}) => {
             : num === "mem_2" ?
             <>
                 <TextPop>
-                    회원관리 - 회원정보 상세 : 아이디를 클릭하면 회원 상세 정보의 새창이 나타납니다.
+                    <strong>회원관리 - 회원정보 상세</strong><br/><br/>
+                    아이디를 클릭하면 회원 상세 정보의 새창이 나타납니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -786,7 +822,8 @@ const PopText = ({num}) => {
             : num === "mem_3" ?
             <>
                 <TextPop>
-                    회원관리 - 프로필이미지 등록/변경 선택 : 파일형식과 용량에 제한을 두었습니다.(input[type='file']의 고유 속성인 accept와 js사용)
+                    <strong>회원관리 - 프로필이미지 등록/변경 선택</strong><br/><br/>
+                    파일형식과 용량에 제한을 두었습니다.(input[type='file']의 고유 속성인 accept와 js사용)
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -797,7 +834,8 @@ const PopText = ({num}) => {
             : num === "mem_4" ?
             <>
                 <TextPop>
-                회원관리 - 프로필이미지 등록/변경 선택 후 : 프로필이미지 등록/변경 후의 모습입니다.
+                    <strong>회원관리 - 프로필이미지 등록/변경 선택 후</strong><br/><br/>
+                    프로필이미지 등록/변경 후의 모습입니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -808,7 +846,8 @@ const PopText = ({num}) => {
             : num === "mem_5" ?
             <>
                 <TextPop>
-                    회원관리 - 회원 리스트 전체 엑셀 파일 저장 : Blob, createObjectURL 등을 사용했습니다.
+                    <strong>회원관리 - 회원 리스트 전체 엑셀 파일 저장</strong><br/><br/>
+                    Blob, createObjectURL 등을 사용했습니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -819,7 +858,8 @@ const PopText = ({num}) => {
             : num === "order_1" ?
             <>
                 <TextPop>
-                    지난 주문 관리 : 2022년 5월 이전의 주문을 관리할 수 있는 페이지입니다.
+                    <strong>지난 주문 관리</strong><br/><br/>
+                    2022년 5월 이전의 주문을 관리할 수 있는 페이지입니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -830,7 +870,8 @@ const PopText = ({num}) => {
             : num === "order_2" ?
             <>
                 <TextPop>
-                    지난 주문 관리 - 주문 정보 상세 : 주문 번호를 클릭하면 주문 정보 상세의 새창이 나타나집니다.
+                    <strong>지난 주문 관리 - 주문 정보 상세</strong><br/><br/>
+                    주문 번호를 클릭하면 주문 정보 상세의 새창이 나타나집니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"js"} />
@@ -842,7 +883,8 @@ const PopText = ({num}) => {
             : num === "web_01" ?
             <>
                 <TextPop>
-                    장바구니 : 상품을 골라 장바구니에 담으면 나타나는 페이지입니다.<br/>
+                    <strong>장바구니</strong><br/><br/>
+                    상품을 골라 장바구니에 담으면 나타나는 페이지입니다.<br/>
                     상태관리 라이브러리는 recoil을 사용하여 수량의 변경, 상품의 장바구니에서의 삭제, 상품 선택을 관리하였습니다.<br/>
                     구매하기 버튼을 클릭하면 recoil atom에 저장되어 있는 정보를 가지고 주문하기로 넘어갑니다.
                 </TextPop>
@@ -858,7 +900,8 @@ const PopText = ({num}) => {
             : num === "web_02" ?
             <>
                 <TextPop>
-                    마이페이지 : 닉네임이 설정되어 있으면 닉네임이 나오고 닉네임이 설정되어 있지 않다면 이름이 표시됩니다. 주문내역과 쿠폰으로 이동할 수 있는 링크가 있으며, 쿠폰은 현재 쿠폰의 갯수를 알 수 있습니다.<br/>
+                    <strong>마이페이지</strong><br/><br/>
+                    닉네임이 설정되어 있으면 닉네임이 나오고 닉네임이 설정되어 있지 않다면 이름이 표시됩니다. 주문내역과 쿠폰으로 이동할 수 있는 링크가 있으며, 쿠폰은 현재 쿠폰의 갯수를 알 수 있습니다.<br/>
                     배송지관리,공지사항으로 이동할 수 있는 링크와 카카오톡 문의하기로 연결되는 버튼을 가지고 있습니다.<br/>
                     우상단의 '&gt;'를 누르면 내 정보를 수정할 수 있는 페이지로 링크가 됩니다.<br/>
                 </TextPop>
@@ -873,7 +916,8 @@ const PopText = ({num}) => {
             : num === "web_03" ?
             <>
                 <TextPop>
-                    마이페이지 - 내 정보 수정 : 프로필 이미지를 설정/변경할 수 있습니다.<br/>
+                    <strong>마이페이지 - 내 정보 수정</strong><br/><br/>
+                    프로필 이미지를 설정/변경할 수 있습니다.<br/>
                     아이디와 생년월일, 성별을 제외한 값들을 수정할 수 있습니다. 하단 회원탈퇴와 로그아웃을 클릭하면 각각 회원탈퇴 페이지로 넘어가고, 로그아웃 처리가 됩니다.
                 </TextPop>
                 <BoxSkillBox>                    
@@ -886,9 +930,95 @@ const PopText = ({num}) => {
             </>
             : num === "web_04" ?
             <>
-              <TextPop>
-                    브랜드(웹) - 웹과 웹뷰페이지를 구분해서 만들었습니다. 모바일 기기에서 맨 위를 터치를 하면 페이지가 탑으로 스크롤이 되어야 하나 왼쪽 app 소개 페이지를 가리고(반응형) 웹뷰로 사용을 했더니 div.Container에 쌓여 있기 때문에 &lt;html&gt;을 스크롤을 하지 못하였습니다.
-                    
+                <TextPop>
+                    <strong>브랜드</strong><br/><br/>
+                    웹과 웹뷰페이지를 구분해서 만들었습니다.<br/><br/>
+                    웹과 웹뷰페이지를 구분한 이유<br/>
+                    1. 모바일 기기 상단 부분 터치시 스크롤 탑이 되어야 한다.<br/>
+                    - 왼쪽 부분을 가리고(반응형) 웹뷰로 사용, 브랜드 부분이 div.Container에 쌓여 있기 때문에 &lt;html&gt;을 스크롤 못함<br/><br/>
+                    해당 브랜드에 관한 정보와 팔로우를 할 수 있는 버튼과 공지사항(vertical banner)과 현재 진행 중인 이벤트(링크 클릭 시 브랜드 스토리로 연결), 카테고리별 해당 브랜드의 상품을 보여 줍니다.<br/><br/>
+                    이 곳에서도 메인페이지에 적용한 next/router의 scrollRestoration 기능이 동작하지 않는 것을 해결하기 위한 Hook이 적용되어 있습니다.<br/>
+                    카테고리와 소팅이 바뀔때마다 그 값을 url parameter로 받아 recoil로 관리를 했습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"typescript"} />
+                    <SkillBadge skill={"nextjs"} />
+                    <SkillBadge skill={"react-query"} />
+                    <SkillBadge skill={"style-component"} />
+                </BoxSkillBox>
+            </>
+            : num === "web_05" ?
+            <>
+                <TextPop>
+                    <strong>웹 메인 페이지</strong><br/><br/>
+                    layout 구조로 인해 next/router의 scrollRestoration 기능이 동작하지 않는 것을 해결하기 위해 Hook을 만들었습니다.<br/>
+                    해당 웹 메인 페이지에서 상품 리스트에서 상품 상세로 링크 후 전 페이지로 돌아 갔을 때 메인 페이지의 위치가 탑으로 되었을 때 이를 해결하고자함 입니다.<br/>
+                    뒤로 돌아 갔을 때 페이지 위치를 알아야 하는지 체크를 할 수 있는 값과 전 페이지의 위치를 session storage에서 관리하는 Hook입니다.<br/><br/>
+                    react-indiana-drag-scroll 사용하여 카테고리 탭을 만들었습니다.<br/>
+                    recoil을 사용하여 현재 카테고리와 소팅의 기준을 관리합니다.<br/>
+                    이는 상품 상세에서 전 페이지로 돌아 갔을 때 원위치 하기 위함입니다.<br/>
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"typescript"} />
+                    <SkillBadge skill={"nextjs"} />
+                    <SkillBadge skill={"react-query"} />
+                    <SkillBadge skill={"style-component"} />
+                </BoxSkillBox>
+            </>
+            : num === "web_06" ?
+            <>
+                <TextPop>
+                    <strong>카테고리 별 페이지</strong><br/><br/>
+                    상품 카테고리 별로 상품 리스트를 보여주는 페이지입니다.<br/>
+                    위의 메인페이지에 적용한 next/router의 scrollRestoration 기능이 동작하지 않는 것을 해결하기 위한 Hook이 적용되어 있습니다.<br/>
+                    카테고리와 소팅이 바뀔때마다 그 값을 url parameter로 받아 recoil로 관리를 했습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"typescript"} />
+                    <SkillBadge skill={"nextjs"} />
+                    <SkillBadge skill={"react-query"} />
+                    <SkillBadge skill={"style-component"} />
+                </BoxSkillBox>
+            </>
+            : num === "web_07" ?
+            <>
+                <TextPop>
+                    <strong>브랜드 스토리</strong><br/><br/>
+                    브랜드에서 링크에 연결된 페이지입니다.<br/>
+                    해당 브랜드의 이벤트 등을 한눈에 볼 수 있도록 구성이 되어있습니다.<br/><br/>
+                    좋아요 버튼이 있으며 차후에 마이페이지에서 좋아요에 체크한 이벤트 리스트를 볼 수 있게 개발할 예정입니다.<br/><br/>
+                    이 곳에는 브랜드 페이지에서 넘어 왔다(뒤로 돌아 갔을 때 돌아 갈 페이지의 위치를 알아야 한다)라는 것을 체크할 수 있고 브랜드 페이지로 돌아 갔을 때 해당 위치로 돌아 가는 Hook이 적용되어 있습니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"typescript"} />
+                    <SkillBadge skill={"nextjs"} />
+                    <SkillBadge skill={"react-query"} />
+                    <SkillBadge skill={"style-component"} />
+                </BoxSkillBox>
+            </>
+            : num === "web_08" ?
+            <>
+                <TextPop>
+                    <strong>검색</strong><br/><br/>
+                    상품을 검색할 수 있고 최근 검색어 리스트가 있으며 삭제 또한 가능합니다.
+                </TextPop>
+                <BoxSkillBox>                    
+                    <SkillBadge skill={"react"} />
+                    <SkillBadge skill={"typescript"} />
+                    <SkillBadge skill={"nextjs"} />
+                    <SkillBadge skill={"react-query"} />
+                    <SkillBadge skill={"style-component"} />
+                </BoxSkillBox>
+            </>
+            : num === "web_09" ?
+            <>
+                <TextPop>
+                    <strong>검색 결과</strong><br/><br/>
+                    검색 keyword에 맞는 해당 상품을 보여 줍니다.
                 </TextPop>
                 <BoxSkillBox>                    
                     <SkillBadge skill={"react"} />
