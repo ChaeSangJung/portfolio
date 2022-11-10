@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.06fc7839.chunk.css",
-    "main.js": "/portfolio/static/js/main.77c7fd52.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.77c7fd52.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.96db855e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.96db855e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.88254cff.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.88254cff.js.map",
-    "static/js/2.a2b8f1cd.chunk.js": "/portfolio/static/js/2.a2b8f1cd.chunk.js",
-    "static/js/2.a2b8f1cd.chunk.js.map": "/portfolio/static/js/2.a2b8f1cd.chunk.js.map",
+    "static/js/2.9b90fd75.chunk.js": "/portfolio/static/js/2.9b90fd75.chunk.js",
+    "static/js/2.9b90fd75.chunk.js.map": "/portfolio/static/js/2.9b90fd75.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.06fc7839.chunk.css.map": "/portfolio/static/css/main.06fc7839.chunk.css.map",
-    "static/js/2.a2b8f1cd.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a2b8f1cd.chunk.js.LICENSE.txt",
+    "static/js/2.9b90fd75.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9b90fd75.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio/static/media/NotoSansKR-Regular.e95adf0e.woff2",
     "static/media/b_1_1.jpg": "/portfolio/static/media/b_1_1.273fd8ff.jpg",
     "static/media/b_1_2.jpg": "/portfolio/static/media/b_1_2.61579087.jpg",
@@ -66,6 +66,15 @@
     "static/media/web_01.jpg": "/portfolio/static/media/web_01.71d433e2.jpg",
     "static/media/web_02.jpg": "/portfolio/static/media/web_02.8cbe796e.jpg",
     "static/media/web_03.jpg": "/portfolio/static/media/web_03.b4571af0.jpg",
+    "static/media/web_04.png": "/portfolio/static/media/web_04.27ee4bf6.png",
+    "static/media/web_05.png": "/portfolio/static/media/web_05.64ef4d55.png",
+    "static/media/web_06.png": "/portfolio/static/media/web_06.849824cf.png",
+    "static/media/web_07.png": "/portfolio/static/media/web_07.be55037e.png",
+    "static/media/web_07_01.png": "/portfolio/static/media/web_07_01.0b9a6ecd.png",
+    "static/media/web_08.png": "/portfolio/static/media/web_08.ed457653.png",
+    "static/media/web_09.png": "/portfolio/static/media/web_09.0d58daef.png",
+    "static/media/web_10.png": "/portfolio/static/media/web_10.a5a989da.png",
+    "static/media/web_11.png": "/portfolio/static/media/web_11.429ca254.png",
     "static/media/webview_01.jpg": "/portfolio/static/media/webview_01.52155176.jpg",
     "static/media/webview_02.jpg": "/portfolio/static/media/webview_02.920d2448.jpg",
     "static/media/webview_03.jpg": "/portfolio/static/media/webview_03.824d4644.jpg",
@@ -93,8 +102,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.88254cff.js",
-    "static/js/2.a2b8f1cd.chunk.js",
+    "static/js/2.9b90fd75.chunk.js",
     "static/css/main.06fc7839.chunk.css",
-    "static/js/main.77c7fd52.chunk.js"
+    "static/js/main.96db855e.chunk.js"
   ]
 }
