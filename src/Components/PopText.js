@@ -871,6 +871,7 @@ const PopText = ({num}) => {
             <>
                 <TextPop>
                     <strong>지난 주문 관리 - 주문 정보 상세</strong><br/><br/>
+                    
                     주문 번호를 클릭하면 주문 정보 상세의 새창이 나타나집니다.
                 </TextPop>
                 <BoxSkillBox>                    
