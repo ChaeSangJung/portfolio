@@ -194,6 +194,10 @@ export const latestDb = [
             },
             {
                 "id" : uuidv4(),
+                "name" : "typescript"
+            },
+            {
+                "id" : uuidv4(),
                 "name" : "es6"
             },
             {
@@ -217,7 +221,7 @@ export const latestDb = [
         "id" : uuidv4(),
         "name" : "homepage",
         "title" : "빗썸라이브 소개 페이지",
-        "url" : "https://www.bithumblive.com",
+        "url" : "https://corp.bithumblive.com",
         "etc" : null,
         "thum" : true,
         "skill" : [
