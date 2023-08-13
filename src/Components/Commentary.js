@@ -172,6 +172,23 @@ const Commentary = ({type}) => {
               2. 이 페이지에 커머스 기능을 하는 web project 확장을 하기 위합입니다.<br/>
             </TextComment>
           )
+          : type === "tvcPoc" ? (
+            <TextComment>
+                한국기계산업진흥회와 함께 산업부의 의뢰를 받아 진행한 POC(proof of concept)입니다.
+                특허와 연계를 하여 특허의 산업분야와 무역상황을 알 수 있고 나아가 AI를 통해 '기술개발 로드맵'과 'RFP(Request For Proposal: 회사에서 프로젝트를 담당할 업체를 선정하기 전에, 요구사항을 정리하여 후보 업체들에게 전달하는 문서)'를 제공합니다.
+                처음으로 리딩을 해 본 프로젝트입니다.
+                팀원들에게 처음 써보는 library(am-chart, keylines 등)에 대해 선 연구를 하고 팀원들에게 가이드를 해 주었으며, 그동안 useState와 useEffect를 이용하여 fetching을 하던 것을 react-query를 사용하여 get/post/patch 등의 방법을 가르쳐가며 작업을 했습니다.
+                
+                <br/><br/>
+                digital visualize에 대해 흥미가 생기고 
+            </TextComment>
+          )
+          :type === "network" ? (
+            <TextComment>                
+                앞으로 진행할 POC에 대비하여 관계망 템플릿을 미리 작업하고 있습니다.
+                key-lines(https://keylines.io)에서 제공하는 기능들을 이용하여 node sizing(기업규모, 산업분류 등), view(렌즈형태, 표준형태, 구조형태, 맵과 연동), 노드의 확장과 축소, filter(기업규모 등), 통계, combine, 검색, word-clouds, time-line, selecting등의 기능을 작업하고 있습니다.
+            </TextComment>
+          )
           : null}
         </Container>
     )

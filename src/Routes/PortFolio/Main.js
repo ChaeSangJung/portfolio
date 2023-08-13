@@ -80,6 +80,16 @@ const Main = () => {
                     <CmsContents />
                 </PopWraps>
             )}
+            {(isPop.bool && isPop.text === "network") && (
+                <PopWraps>
+                    <div>network</div>
+                </PopWraps>
+            )}
+            {(isPop.bool && isPop.text === "tvcPoc") && (
+                <PopWraps>
+                    <div>tvc</div>
+                </PopWraps>
+            )}
 
             <Container>
                 <WrapContent>

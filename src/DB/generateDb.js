@@ -94,7 +94,7 @@ export const forwardDb = [
         },
     ],
         "contents" : false,
-        "state" : '진행중'
+        "state" : null
     },
     {
         "id" : uuidv4(),
@@ -147,7 +147,7 @@ export const forwardDb = [
             }
         ],
         "contents" : false,
-        "state" : null
+        "state" : '진행중'
     },
     {
         "id" : uuidv4(),
@@ -174,12 +174,92 @@ export const forwardDb = [
             }
         ],
         "contents" : false,
-        "state" : null
+        "state" : '진행중'
     }
 ]
 
 // 2020~ projects
 export const latestDb = [
+    {
+        "id" : uuidv4(),
+        "name" : "network",
+        "title" : "NetWork Template (작업중)",
+        "url" : "http://220.118.147.58:20054/",
+        "etc" : "??",
+        "thum" : true,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "react"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "es6"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "typescript"
+            },            
+            {
+                "id" : uuidv4(),
+                "name" : "styled-component"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "react-query"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "scss"
+            }
+        ],
+        "contents" : true,
+        "hasMoreBtn" : true,
+    },
+    {
+        "id" : uuidv4(),
+        "name" : "tvcPoc",
+        "title" : "Tech Value Chain POC",
+        "url" : "http://220.118.147.58:20045/",
+        "etc" : "??",
+        "thum" : true,
+        "skill" : [
+            {
+                "id" : uuidv4(),
+                "name" : "react"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "es6"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "typescript"
+            },            
+            {
+                "id" : uuidv4(),
+                "name" : "styled-component"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "react-query"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "HTML"
+            },
+            {
+                "id" : uuidv4(),
+                "name" : "scss"
+            }
+        ],
+        "contents" : true,
+        "hasMoreBtn" : true,
+    },
     {
         "id" : uuidv4(),
         "name" : "webview",
@@ -221,7 +301,8 @@ export const latestDb = [
         "id" : uuidv4(),
         "name" : "homepage",
         "title" : "빗썸라이브 소개 페이지",
-        "url" : "https://corp.bithumblive.com",
+        // "url" : "https://www.bithumblive.com",
+        "url" : "",
         "etc" : null,
         "thum" : true,
         "skill" : [
@@ -254,7 +335,8 @@ export const latestDb = [
         "id" : uuidv4(),
         "name" : "web-project",
         "title" : "빗썸라이브 Web Project",
-        "url" : "https://www.bithumblive.com",
+        // "url" : "https://dev-www.bithumblive.com",
+        "url" : "",
         "etc" : null,
         "thum" : true,
         "skill" : [
@@ -295,7 +377,8 @@ export const latestDb = [
         "id" : uuidv4(),
         "name" : "cms",
         "title" : "빗썸라이브 CMS",
-        "url" : "https://dev2-cms.bithumblive.com/login",
+        // "url" : "https://dev2-cms.bithumblive.com/login",
+        "url" : "",
         "etc" : null,
         "thum" : true,
         "skill" : [

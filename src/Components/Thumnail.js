@@ -30,6 +30,8 @@ const Thumnail = ({project}) => {
                 : project === "web-project" ? <img src={require(`../images/web_project/web_01.jpg`).default} alt={project} /> 
                 : project === "cms" ? <img src={require(`../images/cms_capture/l_1_1.jpg`).default} alt={project} /> 
                 : project === "typescript" ? <img src={require(`../images/typescript_thumbnail-min.jpg`).default} alt={project} /> 
+                : project === "network" ? <img src={require(`../images/network/network-01.png`).default} alt={project} />
+                : project === "tvcPoc" ? <img src={require(`../images/network/network-02.png`).default} alt={project} />
                 : <img src={require(`../images/no_img.png`).default} alt={project} />
             }
         </DivImg>
