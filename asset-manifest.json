@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.06fc7839.chunk.css",
-    "main.js": "/portfolio/static/js/main.9fa064b7.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9fa064b7.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.88254cff.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.88254cff.js.map",
-    "static/js/2.9b90fd75.chunk.js": "/portfolio/static/js/2.9b90fd75.chunk.js",
-    "static/js/2.9b90fd75.chunk.js.map": "/portfolio/static/js/2.9b90fd75.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.a9756b78.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a9756b78.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.8373c21c.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8373c21c.js.map",
+    "static/js/2.97b10046.chunk.js": "/portfolio/static/js/2.97b10046.chunk.js",
+    "static/js/2.97b10046.chunk.js.map": "/portfolio/static/js/2.97b10046.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.06fc7839.chunk.css.map": "/portfolio/static/css/main.06fc7839.chunk.css.map",
-    "static/js/2.9b90fd75.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9b90fd75.chunk.js.LICENSE.txt",
+    "static/js/2.97b10046.chunk.js.LICENSE.txt": "/portfolio/static/js/2.97b10046.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio/static/media/NotoSansKR-Regular.e95adf0e.woff2",
     "static/media/b_1_1.jpg": "/portfolio/static/media/b_1_1.273fd8ff.jpg",
     "static/media/b_1_2.jpg": "/portfolio/static/media/b_1_2.61579087.jpg",
@@ -39,6 +39,8 @@
     "static/media/mem_4.jpg": "/portfolio/static/media/mem_4.a20109d3.jpg",
     "static/media/mem_5.jpg": "/portfolio/static/media/mem_5.7ce9b316.jpg",
     "static/media/menu.gif": "/portfolio/static/media/menu.d4b9be7b.gif",
+    "static/media/network-01.png": "/portfolio/static/media/network-01.4d777796.png",
+    "static/media/network-02.png": "/portfolio/static/media/network-02.9787124a.png",
     "static/media/no_img.png": "/portfolio/static/media/no_img.7617109d.png",
     "static/media/order_1.jpg": "/portfolio/static/media/order_1.ff1e860c.jpg",
     "static/media/order_2.jpg": "/portfolio/static/media/order_2.32e505f8.jpg",
@@ -101,9 +103,9 @@
     "static/media/youtube.jpg": "/portfolio/static/media/youtube.31ab41ee.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.88254cff.js",
-    "static/js/2.9b90fd75.chunk.js",
+    "static/js/runtime-main.8373c21c.js",
+    "static/js/2.97b10046.chunk.js",
     "static/css/main.06fc7839.chunk.css",
-    "static/js/main.9fa064b7.chunk.js"
+    "static/js/main.a9756b78.chunk.js"
   ]
 }
