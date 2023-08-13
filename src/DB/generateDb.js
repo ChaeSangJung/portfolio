@@ -218,7 +218,7 @@ export const latestDb = [
             }
         ],
         "contents" : true,
-        "hasMoreBtn" : true,
+        "hasMoreBtn" : false,
     },
     {
         "id" : uuidv4(),
@@ -258,7 +258,7 @@ export const latestDb = [
             }
         ],
         "contents" : true,
-        "hasMoreBtn" : true,
+        "hasMoreBtn" : false,
     },
     {
         "id" : uuidv4(),
